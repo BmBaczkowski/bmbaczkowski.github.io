@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://bmbaczkowski.github.io" 
+title: Blazej M. Baczkowski
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -10,25 +10,32 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 5 
+        - name: Research
+          url: research/
+          weight: 2
         - name: Papers
           url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
           weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
+        - name: Teaching
+          url: courses/
+          weight: 4
+        - name: Books
+          url: books/
+          weight: 5
+        # - name: Data
+        #   url: data/
+        #   weight: 6
         - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+          url: blog/
+          weight: 7
+        - name: Consulting
+          url: consulting/
+          weight: 8
 
 params:
-    description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs."
-    author: Moritz-Maria von Igelfeld
+    description: |
+      Description
+    author: Blazej M. Baczkowski
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -42,7 +49,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["books","courses","papers","data"]
+    MainSections: ["Consulting","Research","Papers","Teaching", "Books", "Blog"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -52,48 +59,49 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
-          imageUrl: "picture.jpeg"
+          title: Dr. Blazej M. Baczkowski
+          subtitle: |
+            I am a cognitive psychologist with a strong passion for methodology and statistics, which has driven me to develop advanced analytical and programming skills. My past research primarily focused on how individuals use mnemonic processes to protect themselves from danger despite minimal aversive experience. Aside, I offer consulting and courses on statistical modeling and inference. Currently, writing an open book on *Open Science* -- covering replicability, reproducibility, and robustness -- to provide students with a solid foundation for conducting high-quality research. Blogging on topics in data science and engineering.
+          imageUrl: "18167621.png"
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: Consulting
+              url: consulting
+            - name: Research
+              url: research/
             - name: Papers
               url: papers/
-            - name: Courses
+            - name: Teaching
               url: courses/
-            - name: Data
-              url: data/
+            # - name: Data
+            #   url: data/
             - name: Books
               url: books/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
             - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+              url: blog/
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:moritz.maria.von.igelfeld@gmail.com
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
+        - name: how to pronounce my name
+          url: https://namedrop.io/blazejbaczkowski
+        - name: email
+          url: mailto:bm[dot]baczkowski[at]gmail[dot]com
+        # - name: cv
+        #   url: cv.pdf
+        # - name: orcid
+        #   url: www.google.com
         - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@alexandermccallsmithoffici9000
-        - name: Twitter
-          url: https://twitter.com/McCallSmith
+          url: location
+        - name: googlescholar
+          url: https://scholar.google.com/citations?user=Mt3ggY8AAAAJ&hl=en
+        - name: github
+          url: https://github.com/bmbaczkowski
+        # - name: linkedin
+        #   url: https://github.com/bmbaczkowski
+        # - name: psyarxiv
+        #   url: https://github.com/bmbaczkowski
+        # - name: osf
+        #   url: https://github.com/bmbaczkowski
 
     assets:
         disableScrollBarStyle: true
@@ -101,7 +109,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Blazej M. Baczkowski"
       icon: favicon.ico
       iconHeight: 18
 
