@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Transfer on Blazej M. Baczkowski</title>
+    <link>http://localhost:1313/tags/transfer/</link>
+    <description>Recent content in Transfer on Blazej M. Baczkowski</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/transfer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aversive learning and transfer in structured environments</title>
+      <link>http://localhost:1313/research/doeller/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/doeller/</guid>
+      <description>Description</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Functional Connectivity on Blazej M. Baczkowski</title>
+    <link>http://localhost:1313/tags/functional-connectivity/</link>
+    <description>Recent content in Functional Connectivity on Blazej M. Baczkowski</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 15 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/functional-connectivity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shifts of the amygdala coupling with dorsal and ventral medial PFC are associated with fluctuations in arousal</title>
+      <link>http://localhost:1313/papers/berlin/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/papers/berlin/</guid>
+      <description>Description</description>
+    </item>
+  </channel>
+</rss>

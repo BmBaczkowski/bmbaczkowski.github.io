@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker | Blazej M. Baczkowski</title>
+<meta name="keywords" content="Quarto, docker, podman, reproducibility, apaquarto">
+<meta name="description" content="How to use Quarto in a Docker container?">
+<meta name="author" content="Blazej M. Baczkowski">
+<link rel="canonical" href="http://localhost:1313/blog/blog1/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/blog1/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker" />
+<meta property="og:description" content="How to use Quarto in a Docker container?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/blog1/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-02-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-02-12T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker"/>
+<meta name="twitter:description" content="How to use Quarto in a Docker container?"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "http://localhost:1313/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Containerized Writing: Ensuring Manuscript Reproducibility with Quarto \u0026 Docker",
+      "item": "http://localhost:1313/blog/blog1/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Containerized Writing: Ensuring Manuscript Reproducibility with Quarto \u0026 Docker",
+  "name": "Containerized Writing: Ensuring Manuscript Reproducibility with Quarto \u0026 Docker",
+  "description": "How to use Quarto in a Docker container?",
+  "keywords": [
+    "Quarto", "docker", "podman", "reproducibility", "apaquarto"
+  ],
+  "articleBody": "Reproducibility is crucial in research and data science. One way to achieve it is by using containers, ensuring that your environment remains consistent across different systems.\nWhile this approach is commonly used in data analysis, I also enjoy writing my manuscripts in a fully reproducible and containerized way. It ensures consistency across environments, makes collaboration easier, and—let’s be honest—there’s something satisfying about having a perfectly isolated setup for writing and compiling documents. 😄\nThis guide walks you through creating a Docker image with Quarto inside a container.\nIf you’re working on a manuscript in APA style, check out apaquarto – a package for writing documents in APA format with Quarto.\nStep-by-Step: Building a Docker Image with Quarto 1. Choose a Base Image We’ll use rocker/rstudio:4.3.2, a pre-built image that includes RStudio Server and R 4.3.2, and supports ARM architecture. Rocker is an open-source project that provides optimized Docker images for R development.\nFROM rocker/rstudio:4.3.2 2. Install System Dependencies To install Quarto, we first need some system utilities:\nRUN apt-get update \u0026\u0026 apt-get install -y --no-install-recommends \\ curl \\ gdebi-core 3. Install R Packages with pak pak is a modern R package manager designed for fast and reliable dependency installation.\nRUN R -q -e 'install.packages(\"pak\", repos=sprintf(\"https://r-lib.github.io/p/pak/stable/%s/%s/%s\", .Platform$pkgType, R.Version()$os, R.Version()$arch))' For project-specific R packages, I keep a list in r-pkgs.txt, where each line contains a package name and version:\n# Example: r-pkgs.txt easystats@0.7.2 extraDistr@1.10.0 lme4@1.1-35.5 MASS@7.3-60.2 We copy this list into the container and install the packages using pak:\nCOPY r-pkgs.txt /tmp/packages.txt RUN R -q -e 'pak::pkg_install(pkg=readLines(\"/tmp/packages.txt\"))' 4. Install TeX Live (for LaTeX \u0026 PDF Generation) To generate PDFs, we install a LaTeX distribution:\nRUN /rocker_scripts/install_texlive.sh Then, we ensure TeX Live’s binary directory is available:\nENV PATH=\"$PATH:/usr/local/texlive/bin/linux\" Like R packages, I keep a separate list for LaTeX packages in tex-pkgs.txt:\n# Example: tex-pkgs.txt amsfonts amsmath apa7 We copy and install them using the TeX Live package manager (tlmgr):\nCOPY tex-pkgs.txt /tmp/ RUN tlmgr install $(cat /tmp/tex-pkgs.txt) RUN R -q -e 'tinytex::r_texmf(action=\"add\")' 5. Install Quarto We download and install a specific Quarto version for reproducibility:\nRUN ARCH=$(dpkg --print-architecture) \u0026\u0026 \\ curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-${ARCH}.deb \u0026\u0026 \\ gdebi --non-interactive quarto-1.6.42-linux-${ARCH}.deb 6. Cleanup (Reduce Image Size) To keep the image lightweight, we remove unnecessary package lists:\nRUN rm -rf /var/lib/apt/lists/* 7. Set the Working Directory Finally, we define a working directory inside the container for convenience:\nWORKDIR /home/dockeruser Final Thoughts By using this approach, you create a fully reproducible Quarto environment inside Docker. This setup ensures consistency across different machines, making it perfect for scientific writing, publishing, and collaboration. 🚀\nFull dockerfile # Use a stable Rocker image as a base FROM rocker/rstudio:4.3.2 # Update the package list and install necessary system dependencies # - curl: Used for downloading files from URLs # - gdebi-core: Required for installing .deb packages (like Quarto) RUN apt-get update \u0026\u0026 apt-get install -y --no-install-recommends \\ curl \\ gdebi-core # Install the 'pak' package manager for R RUN R -q -e 'install.packages(\"pak\", repos=sprintf(\"https://r-lib.github.io/p/pak/stable/%s/%s/%s\", .Platform$pkgType, R.Version()$os, R.Version()$arch))' # Copy the list of required R packages into the container COPY r-pkgs.txt /tmp/ # Install the R packages listed in 'r-pkgs.txt' using pak RUN R -q -e 'pak::pkg_install(pkg=readLines(\"/tmp/packages.txt\"))' # Install TeX Live for LaTeX document support RUN /rocker_scripts/install_texlive.sh # Update PATH to include TeX Live binaries ENV PATH=\"$PATH:/usr/local/texlive/bin/linux\" # Copy the list of TeX packages into the container COPY tex-pkgs.txt /tmp/ # Install required TeX packages RUN tlmgr install `cat /tmp/tex-pkgs.txt` # Ensure R recognizes the TeX installation RUN R -q -e 'tinytex::r_texmf(action=\"add\")' # Determine system architecture, download, and install Quarto RUN ARCH=$(dpkg --print-architecture) \u0026\u0026 \\ curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-${ARCH}.deb \u0026\u0026 \\ gdebi --non-interactive quarto-1.6.42-linux-${ARCH}.deb # Clean up package lists to reduce image size RUN rm -rf /var/lib/apt/lists/* # Set the working directory WORKDIR /home/dockeruser ",
+  "wordCount" : "620",
+  "inLanguage": "en",
+  "datePublished": "2025-02-12T00:00:00Z",
+  "dateModified": "2025-02-12T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Blazej M. Baczkowski"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/blog1/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blazej M. Baczkowski",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blazej M. Baczkowski">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Blazej M. Baczkowski</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/consulting/" title="Consulting">
+                    <span>Consulting</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker
+    </h1>
+    <div class="post-meta"><span title='2025-02-12 00:00:00 +0000 UTC'>February 2025</span>&nbsp;&middot;&nbsp;Blazej M. Baczkowski
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-by-step-building-a-docker-image-with-quarto"><strong>Step-by-Step: Building a Docker Image with Quarto</strong></a></li>
+    <li><a href="#final-thoughts"><strong>Final Thoughts</strong></a></li>
+    <li><a href="#full-dockerfile"><strong>Full dockerfile</strong></a></li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>Reproducibility is crucial in research and data science. One way to achieve it is by using containers, ensuring that your environment remains consistent across different systems.</p>
+<p>While this approach is commonly used in data analysis, I also enjoy writing my manuscripts in a fully reproducible and containerized way. It ensures consistency across environments, makes collaboration easier, and—let’s be honest—there’s something satisfying about having a perfectly isolated setup for writing and compiling documents. 😄</p>
+<p>This guide walks you through creating a <strong>Docker image</strong> with <a href="https://quarto.org/" target="_blank"><strong>Quarto</strong></a> inside a container.</p>
+<p>If you&rsquo;re working on a manuscript in APA style, check out <a href="https://wjschne.github.io/apaquarto/" target="_blank"><strong>apaquarto</strong></a> &ndash; a package for writing documents in APA format with Quarto.</p>
+<hr>
+<h2 id="step-by-step-building-a-docker-image-with-quarto"><strong>Step-by-Step: Building a Docker Image with Quarto</strong><a hidden class="anchor" aria-hidden="true" href="#step-by-step-building-a-docker-image-with-quarto">#</a></h2>
+<h3 id="1-choose-a-base-image"><strong>1. Choose a Base Image</strong><a hidden class="anchor" aria-hidden="true" href="#1-choose-a-base-image">#</a></h3>
+<p>We&rsquo;ll use <code>rocker/rstudio:4.3.2</code>, a pre-built image that includes <strong>RStudio Server</strong> and <strong>R 4.3.2</strong>, and supports <strong>ARM architecture</strong>.
+<a href="https://rocker-project.org/" target="_blank"><strong>Rocker</strong></a> is an open-source project that provides optimized Docker images for R development.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">FROM</span><span style="color:#a50"> rocker/rstudio:4.3.2</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="2-install-system-dependencies"><strong>2. Install System Dependencies</strong><a hidden class="anchor" aria-hidden="true" href="#2-install-system-dependencies">#</a></h3>
+<p>To install Quarto, we first need some system utilities:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">RUN</span> apt-get update &amp;&amp; apt-get install -y --no-install-recommends <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    curl <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    gdebi-core<span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="3-install-r-packages-with"><strong>3. Install R Packages with <code>pak</code></strong><a hidden class="anchor" aria-hidden="true" href="#3-install-r-packages-with">#</a></h3>
+<p><a href="https://pak.r-lib.org/" target="_blank"><code>pak</code></a> is a modern R package manager designed for fast and reliable dependency installation.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;install.packages(&#34;pak&#34;, repos=sprintf(&#34;https://r-lib.github.io/p/pak/stable/%s/%s/%s&#34;, .Platform$pkgType, R.Version()$os, R.Version()$arch))&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><p>For project-specific R packages, I keep a list in <code>r-pkgs.txt</code>, where each line contains a package name and version:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span># Example: r-pkgs.txt  
+</span></span><span style="display:flex;"><span>easystats@0.7.2  
+</span></span><span style="display:flex;"><span>extraDistr@1.10.0  
+</span></span><span style="display:flex;"><span>lme4@1.1-35.5  
+</span></span><span style="display:flex;"><span>MASS@7.3-60.2  
+</span></span></code></pre></div><p>We copy this list into the container and install the packages using <code>pak</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">COPY</span> r-pkgs.txt /tmp/packages.txt  <span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;pak::pkg_install(pkg=readLines(&#34;/tmp/packages.txt&#34;))&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="4-install-tex-live-for-latex--pdf-generation"><strong>4. Install TeX Live (for LaTeX &amp; PDF Generation)</strong><a hidden class="anchor" aria-hidden="true" href="#4-install-tex-live-for-latex--pdf-generation">#</a></h3>
+<p>To generate PDFs, we install a <strong>LaTeX</strong> distribution:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">RUN</span> /rocker_scripts/install_texlive.sh<span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><p>Then, we ensure TeX Live’s binary directory is available:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">ENV</span> <span style="color:#a00">PATH</span>=<span style="color:#a50">&#34;</span><span style="color:#a00">$PATH</span><span style="color:#a50">:/usr/local/texlive/bin/linux&#34;</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><p>Like R packages, I keep a separate list for LaTeX packages in <code>tex-pkgs.txt</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span># Example: tex-pkgs.txt  
+</span></span><span style="display:flex;"><span>amsfonts  
+</span></span><span style="display:flex;"><span>amsmath  
+</span></span><span style="display:flex;"><span>apa7  
+</span></span></code></pre></div><p>We copy and install them using the TeX Live package manager (<code>tlmgr</code>):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">COPY</span> tex-pkgs.txt /tmp/  <span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> tlmgr install <span style="color:#00a">$(</span>cat /tmp/tex-pkgs.txt<span style="color:#00a">)</span>  <span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;tinytex::r_texmf(action=&#34;add&#34;)&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="5-install-quarto"><strong>5. Install Quarto</strong><a hidden class="anchor" aria-hidden="true" href="#5-install-quarto">#</a></h3>
+<p>We download and install a specific Quarto version for reproducibility:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">RUN</span> <span style="color:#a00">ARCH</span>=<span style="color:#00a">$(</span>dpkg --print-architecture<span style="color:#00a">)</span> &amp;&amp; <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-<span style="color:#a50">${</span><span style="color:#a00">ARCH</span><span style="color:#a50">}</span>.deb &amp;&amp; <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    gdebi --non-interactive quarto-1.6.42-linux-<span style="color:#a50">${</span><span style="color:#a00">ARCH</span><span style="color:#a50">}</span>.deb<span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="6-cleanup-reduce-image-size"><strong>6. Cleanup (Reduce Image Size)</strong><a hidden class="anchor" aria-hidden="true" href="#6-cleanup-reduce-image-size">#</a></h3>
+<p>To keep the image lightweight, we remove unnecessary package lists:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">RUN</span> rm -rf /var/lib/apt/lists/*<span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h3 id="7-set-the-working-directory"><strong>7. Set the Working Directory</strong><a hidden class="anchor" aria-hidden="true" href="#7-set-the-working-directory">#</a></h3>
+<p>Finally, we define a working directory inside the container for convenience:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#00a">WORKDIR</span><span style="color:#a50"> /home/dockeruser</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div><hr>
+<h2 id="final-thoughts"><strong>Final Thoughts</strong><a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>By using this approach, you create a <strong>fully reproducible</strong> Quarto environment inside Docker. This setup ensures consistency across different machines, making it perfect for scientific writing, publishing, and collaboration. 🚀</p>
+<hr>
+<h2 id="full-dockerfile"><strong>Full dockerfile</strong><a hidden class="anchor" aria-hidden="true" href="#full-dockerfile">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Use a stable Rocker image as a base</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">FROM</span><span style="color:#a50"> rocker/rstudio:4.3.2</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Update the package list and install necessary system dependencies</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># - curl: Used for downloading files from URLs</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># - gdebi-core: Required for installing .deb packages (like Quarto)</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> apt-get update &amp;&amp; apt-get install -y --no-install-recommends <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    curl <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    gdebi-core<span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Install the &#39;pak&#39; package manager for R</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;install.packages(&#34;pak&#34;, repos=sprintf(&#34;https://r-lib.github.io/p/pak/stable/%s/%s/%s&#34;, .Platform$pkgType, R.Version()$os, R.Version()$arch))&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Copy the list of required R packages into the container</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">COPY</span> r-pkgs.txt /tmp/<span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Install the R packages listed in &#39;r-pkgs.txt&#39; using pak</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;pak::pkg_install(pkg=readLines(&#34;/tmp/packages.txt&#34;))&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Install TeX Live for LaTeX document support</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> /rocker_scripts/install_texlive.sh<span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Update PATH to include TeX Live binaries</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">ENV</span> <span style="color:#a00">PATH</span>=<span style="color:#a50">&#34;</span><span style="color:#a00">$PATH</span><span style="color:#a50">:/usr/local/texlive/bin/linux&#34;</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Copy the list of TeX packages into the container</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">COPY</span> tex-pkgs.txt /tmp/<span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Install required TeX packages</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> tlmgr install <span style="color:#a50">`</span>cat /tmp/tex-pkgs.txt<span style="color:#a50">`</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Ensure R recognizes the TeX installation</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> R -q -e <span style="color:#a50">&#39;tinytex::r_texmf(action=&#34;add&#34;)&#39;</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Determine system architecture, download, and install Quarto</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> <span style="color:#a00">ARCH</span>=<span style="color:#00a">$(</span>dpkg --print-architecture<span style="color:#00a">)</span> &amp;&amp; <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    curl -LO https://github.com/quarto-dev/quarto-cli/releases/download/v1.6.42/quarto-1.6.42-linux-<span style="color:#a50">${</span><span style="color:#a00">ARCH</span><span style="color:#a50">}</span>.deb &amp;&amp; <span style="color:#a50">\
+</span></span></span><span style="display:flex;"><span><span style="color:#a50"></span>    gdebi --non-interactive quarto-1.6.42-linux-<span style="color:#a50">${</span><span style="color:#a00">ARCH</span><span style="color:#a50">}</span>.deb<span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Clean up package lists to reduce image size</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">RUN</span> rm -rf /var/lib/apt/lists/* <span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#aaa;font-style:italic"># Set the working directory</span><span style="color:#f00;background-color:#faa">
+</span></span></span><span style="display:flex;"><span><span style="color:#f00;background-color:#faa"></span><span style="color:#00a">WORKDIR</span><span style="color:#a50"> /home/dockeruser</span><span style="color:#f00;background-color:#faa">
+</span></span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/quarto/">Quarto</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/podman/">Podman</a></li>
+      <li><a href="http://localhost:1313/tags/reproducibility/">Reproducibility</a></li>
+      <li><a href="http://localhost:1313/tags/apaquarto/">Apaquarto</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">Blazej M. Baczkowski</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

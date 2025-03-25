@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Streamlining Docker Workflows with GNU Make | Blazej M. Baczkowski</title>
+<meta name="keywords" content="GNU Make, docker, podman, automation, reproducibility">
+<meta name="description" content="How to build, test, and run Docker containers automatically with GNU Make?">
+<meta name="author" content="Blazej M. Baczkowski">
+<link rel="canonical" href="http://localhost:1313/blog/blog2/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/blog2/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Streamlining Docker Workflows with GNU Make" />
+<meta property="og:description" content="How to build, test, and run Docker containers automatically with GNU Make?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/blog2/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-03-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-03-01T00:00:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Streamlining Docker Workflows with GNU Make"/>
+<meta name="twitter:description" content="How to build, test, and run Docker containers automatically with GNU Make?"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Blog",
+      "item": "http://localhost:1313/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Streamlining Docker Workflows with GNU Make",
+      "item": "http://localhost:1313/blog/blog2/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Streamlining Docker Workflows with GNU Make",
+  "name": "Streamlining Docker Workflows with GNU Make",
+  "description": "How to build, test, and run Docker containers automatically with GNU Make?",
+  "keywords": [
+    "GNU Make", "docker", "podman", "automation", "reproducibility"
+  ],
+  "articleBody": "As data scientists, we often find ourselves juggling dependencies, environment setups, and reproducibility issues. One way to streamline this process is by using Docker (or Podman) to create containerized environments. However, repeatedly typing long docker build and docker run commands can be tedious. This is where magnificent GNU Make comes in handy—it allows us to automate these commands efficiently. And is a recipe for others reproducing our projects.\nIn this post, we’ll explore how to build, test, and run a Docker (or Podman) container using repeatable workflows with GNU Make\nWe will explain everything working with the following Makefile snippet to build and run Quarto in a container, which we described in a previous post.\n.PHONY: all build test save load clean # Detect whether podman or docker is available ENGINE := $(shell command -v podman \u003e/dev/null 2\u003e\u00261 \u0026\u0026 echo podman || echo docker) # Image name and tag IMG_NAME := r-quarto TAG := latest IMG := $(IMG_NAME):$(TAG) # Define build context BUILD_CONTEXT := r-quarto DOCKERFILE := $(BUILD_CONTEXT)/Dockerfile # Ensure build dependencies exist BUILD_DEPS := $(DOCKERFILE) $(BUILD_CONTEXT)/r-pkgs.txt $(BUILD_CONTEXT)/tex-pkgs.txt # Default target (build and test) all: build test # Build the Docker image build: $(BUILD_DEPS) $(ENGINE) build -t $(IMG) -f $(DOCKERFILE) $(BUILD_CONTEXT) # Run a test container interactively test: $(ENGINE) run --rm --user=root -it -v $(PWD):/home/dockeruser $(IMG) bash # Save the image as a tarball for easy sharing save: $(ENGINE) save $(IMG) | gzip \u003e $(IMG_NAME).tar.gz @echo \"Docker image saved as $(IMG_NAME).tar.gz\" # Load a previously saved image load: gunzip -c $(IMG_NAME).tar.gz | $(ENGINE) load @echo \"Docker image $(IMG) loaded\" # Remove the image (clean up) clean: $(ENGINE) rmi -f $(IMG) @echo \"Docker image $(IMG) removed\" Understanding the Makefile Let’s break down the key components of our Makefile.\n1. Declaring .PHONY Targets .PHONY: all build test save load clean Declares phony targets, meaning these are not actual files but just labels for actions. Ensures that make always executes the commands for these targets, even if files with the same names exist. 2. Selecting the Container Engine ENGINE := $(shell command -v podman \u003e/dev/null 2\u003e\u00261 \u0026\u0026 echo podman || echo docker) Checks whether podman is available. If podman exists, it sets ENGINE=podman; otherwise, it defaults to docker. Ensures the same commands work regardless of whether Podman or Docker is installed. 3. Defining Variables IMG_NAME := r-quarto TAG := latest IMG := $(IMG_NAME):$(TAG) IMG_NAME is the base name of the container image (r-quarto). TAG is set to latest, meaning the most recent version. IMG combines the two: r-quarto:latest. BUILD_CONTEXT := r-quarto DOCKERFILE := $(BUILD_CONTEXT)/Dockerfile BUILD_DEPS := $(DOCKERFILE) $(BUILD_CONTEXT)/r-pkgs.txt $(BUILD_CONTEXT)/tex-pkgs.txt Defines the build context (where the Docker build files are located). DOCKERFILE points to r-quarto/Dockerfile. BUILD_DEPS lists files required for building the image: Dockerfile r-pkgs.txt (likely a list of R packages) tex-pkgs.txt (likely a list of LaTeX packages) 4. Default Target (all) all: build test Runs both build and test when you just type make. 5. Building the Image build: $(BUILD_DEPS) $(ENGINE) build -t $(IMG) -f $(DOCKERFILE) $(BUILD_CONTEXT) Builds the container image using Podman or Docker. Ensures required files (BUILD_DEPS) exist before building. Tags the image as r-quarto:latest. 6. Running a Test Container test: $(ENGINE) run --rm --user=root -it -v $(PWD):/home/dockeruser $(IMG) bash Starts a container interactively (-it) with a root user. Mounts the current directory ($(PWD)) inside the container at /home/dockeruser. Runs a bash shell. --rm removes the container after exit. 7. Saving the Image to a Compressed Tarball save: $(ENGINE) save $(IMG) | gzip \u003e $(IMG_NAME).tar.gz @echo \"Docker image saved as $(IMG_NAME).tar.gz\" Exports (save) the container image to a .tar.gz file for easy sharing. Uses gzip to compress it. Prints a confirmation message. 8. Loading a Saved Image load: gunzip -c $(IMG_NAME).tar.gz | $(ENGINE) load @echo \"Docker image $(IMG) loaded\" Uncompresses (gunzip -c) the saved .tar.gz file. Loads the image into Docker/Podman. Prints a confirmation message. 9. Cleaning Up (Removing the Image) clean: $(ENGINE) rmi -f $(IMG) @echo \"Docker image $(IMG) removed\" Removes (rmi -f) the image from the system. Prints a confirmation message. How to Use This Makefile Command What it Does make Builds and tests the image (make all) make build Builds the container image make test Runs an interactive test container make save Saves the image as a .tar.gz file make load Loads the image from .tar.gz make clean Deletes the image from the system Final Thoughts Using GNU Make with Docker (or Podman) provides a structured, repeatable, and automated way to manage container builds and executions. By defining targets in a Makefile, you simplify commands and ensure consistency in your development workflow.\n🚀 Happy coding, and may your containers always build successfully! 🎯\n",
+  "wordCount" : "765",
+  "inLanguage": "en",
+  "datePublished": "2025-03-01T00:00:00Z",
+  "dateModified": "2025-03-01T00:00:00Z",
+  "author":[{
+    "@type": "Person",
+    "name": "Blazej M. Baczkowski"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/blog2/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blazej M. Baczkowski",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css" integrity="sha384-wcIxkf4k558AjM3Yz3BBFQUbk/zgIYC2R0QpeeYb+TwlBVMrlgLqwRjRtGZiK7ww" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: "\\begin{equation}", right: "\\end{equation}", display: true},
+            {left: "\\begin{equation*}", right: "\\end{equation*}", display: true},
+            {left: "\\begin{align}", right: "\\end{align}", display: true},
+            {left: "\\begin{align*}", right: "\\end{align*}", display: true},
+            {left: "\\begin{alignat}", right: "\\end{alignat}", display: true},
+            {left: "\\begin{gather}", right: "\\end{gather}", display: true},
+            {left: "\\begin{CD}", right: "\\end{CD}", display: true},
+          ],
+          throwOnError : false
+        });
+    });
+</script>
+ 
+
+
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blazej M. Baczkowski">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
+                    height="18"
+                    width="18">Blazej M. Baczkowski</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/research/" title="Research">
+                    <span>Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/papers/" title="Papers">
+                    <span>Papers</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/courses/" title="Teaching">
+                    <span>Teaching</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Books">
+                    <span>Books</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/consulting/" title="Consulting">
+                    <span>Consulting</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Streamlining Docker Workflows with GNU Make
+    </h1>
+    <div class="post-meta"><span title='2025-03-01 00:00:00 +0000 UTC'>March 2025</span>&nbsp;&middot;&nbsp;Blazej M. Baczkowski
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#understanding-the-makefile"><strong>Understanding the Makefile</strong></a></li>
+    <li><a href="#how-to-use-this-makefile"><strong>How to Use This Makefile</strong></a></li>
+    <li><a href="#final-thoughts"><strong>Final Thoughts</strong></a></li>
+  </ul>
+</nav>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>As data scientists, we often find ourselves juggling dependencies, environment setups, and reproducibility issues. One way to streamline this process is by using <strong>Docker</strong> (or <strong>Podman</strong>) to create containerized environments. However, repeatedly typing long <code>docker build</code> and <code>docker run</code> commands can be tedious. This is where magnificent <a href="https://www.gnu.org/software/make/" target="_blank"><strong>GNU Make</strong></a> comes in handy—it allows us to automate these commands efficiently. And is a recipe for others reproducing our projects.</p>
+<p>In this post, we’ll explore how to build, test, and run a <strong>Docker</strong> (or <strong>Podman</strong>) container using repeatable workflows with <strong>GNU Make</strong></p>
+<p>We will explain everything working with the following <code>Makefile</code> snippet to build and run <code>Quarto</code> in a container, which we described in a previous <a href="/website/blog/blog1">post</a>.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">.PHONY</span>: all build test save load clean
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Detect whether podman or docker is available
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#a00">ENGINE</span> := <span style="color:#00a">$(</span>shell <span style="color:#0aa">command</span> -v podman &gt;/dev/null 2&gt;&amp;<span style="color:#099">1</span> &amp;&amp; <span style="color:#0aa">echo</span> podman || <span style="color:#0aa">echo</span> docker<span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Image name and tag
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#a00">IMG_NAME</span> := r-quarto
+</span></span><span style="display:flex;"><span><span style="color:#a00">TAG</span> := latest
+</span></span><span style="display:flex;"><span><span style="color:#a00">IMG</span> := <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>:<span style="color:#00a">$(</span>TAG<span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Define build context
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#a00">BUILD_CONTEXT</span> := r-quarto
+</span></span><span style="display:flex;"><span><span style="color:#a00">DOCKERFILE</span> := <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/Dockerfile
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Ensure build dependencies exist
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#a00">BUILD_DEPS</span> := <span style="color:#00a">$(</span>DOCKERFILE<span style="color:#00a">)</span> <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/r-pkgs.txt <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/tex-pkgs.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Default target (build and test)
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">all</span>: build test
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Build the Docker image
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">build</span>: <span style="color:#00a">$(</span><span style="color:#a00">BUILD_DEPS</span><span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> build -t <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> -f <span style="color:#00a">$(</span>DOCKERFILE<span style="color:#00a">)</span> <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Run a test container interactively
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">test</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> run --rm --user=root -it -v <span style="color:#00a">$(</span>PWD<span style="color:#00a">)</span>:/home/dockeruser <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> bash
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Save the image as a tarball for easy sharing
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">save</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> save <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> | gzip &gt; <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>.tar.gz
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image saved as </span><span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span><span style="color:#a50">.tar.gz&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Load a previously saved image
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">load</span>:
+</span></span><span style="display:flex;"><span>	gunzip -c <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>.tar.gz | <span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> load
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image </span><span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span><span style="color:#a50"> loaded&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"># Remove the image (clean up)
+</span></span></span><span style="display:flex;"><span><span style="color:#aaa;font-style:italic"></span><span style="color:#0a0">clean</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> rmi -f <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image </span><span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span><span style="color:#a50"> removed&#34;</span>
+</span></span></code></pre></div><hr>
+<h2 id="understanding-the-makefile"><strong>Understanding the Makefile</strong><a hidden class="anchor" aria-hidden="true" href="#understanding-the-makefile">#</a></h2>
+<p>Let&rsquo;s break down the key components of our <code>Makefile</code>.</p>
+<hr>
+<h3 id="1-declaring"><strong>1. Declaring <code>.PHONY</code> Targets</strong><a hidden class="anchor" aria-hidden="true" href="#1-declaring">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">.PHONY</span>: all build test save load clean
+</span></span></code></pre></div><ul>
+<li>Declares <strong>phony</strong> targets, meaning these are not actual files but just labels for actions.</li>
+<li>Ensures that <code>make</code> always executes the commands for these targets, even if files with the same names exist.</li>
+</ul>
+<hr>
+<h3 id="2-selecting-the-container-engine"><strong>2. Selecting the Container Engine</strong><a hidden class="anchor" aria-hidden="true" href="#2-selecting-the-container-engine">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#a00">ENGINE</span> := <span style="color:#00a">$(</span>shell <span style="color:#0aa">command</span> -v podman &gt;/dev/null 2&gt;&amp;<span style="color:#099">1</span> &amp;&amp; <span style="color:#0aa">echo</span> podman || <span style="color:#0aa">echo</span> docker<span style="color:#00a">)</span>
+</span></span></code></pre></div><ul>
+<li>Checks whether <code>podman</code> is available.</li>
+<li>If <code>podman</code> exists, it sets <code>ENGINE=podman</code>; otherwise, it defaults to <code>docker</code>.</li>
+<li>Ensures the same commands work regardless of whether Podman or Docker is installed.</li>
+</ul>
+<hr>
+<h3 id="3-defining-variables"><strong>3. Defining Variables</strong><a hidden class="anchor" aria-hidden="true" href="#3-defining-variables">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#a00">IMG_NAME</span> := r-quarto
+</span></span><span style="display:flex;"><span><span style="color:#a00">TAG</span> := latest
+</span></span><span style="display:flex;"><span><span style="color:#a00">IMG</span> := <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>:<span style="color:#00a">$(</span>TAG<span style="color:#00a">)</span>
+</span></span></code></pre></div><ul>
+<li><strong><code>IMG_NAME</code></strong> is the base name of the container image (<code>r-quarto</code>).</li>
+<li><strong><code>TAG</code></strong> is set to <code>latest</code>, meaning the most recent version.</li>
+<li><strong><code>IMG</code></strong> combines the two: <code>r-quarto:latest</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#a00">BUILD_CONTEXT</span> := r-quarto
+</span></span><span style="display:flex;"><span><span style="color:#a00">DOCKERFILE</span> := <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/Dockerfile
+</span></span><span style="display:flex;"><span><span style="color:#a00">BUILD_DEPS</span> := <span style="color:#00a">$(</span>DOCKERFILE<span style="color:#00a">)</span> <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/r-pkgs.txt <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>/tex-pkgs.txt
+</span></span></code></pre></div><ul>
+<li>Defines the <strong>build context</strong> (where the Docker build files are located).</li>
+<li><strong><code>DOCKERFILE</code></strong> points to <code>r-quarto/Dockerfile</code>.</li>
+<li><strong><code>BUILD_DEPS</code></strong> lists files required for building the image:
+<ul>
+<li><code>Dockerfile</code></li>
+<li><code>r-pkgs.txt</code> (likely a list of R packages)</li>
+<li><code>tex-pkgs.txt</code> (likely a list of LaTeX packages)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="4-default-target-"><strong>4. Default Target (<code>all</code>)</strong><a hidden class="anchor" aria-hidden="true" href="#4-default-target-">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">all</span>: build test
+</span></span></code></pre></div><ul>
+<li>Runs both <code>build</code> and <code>test</code> when you just type <code>make</code>.</li>
+</ul>
+<hr>
+<h3 id="5-building-the-image"><strong>5. Building the Image</strong><a hidden class="anchor" aria-hidden="true" href="#5-building-the-image">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">build</span>: <span style="color:#00a">$(</span><span style="color:#a00">BUILD_DEPS</span><span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> build -t <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> -f <span style="color:#00a">$(</span>DOCKERFILE<span style="color:#00a">)</span> <span style="color:#00a">$(</span>BUILD_CONTEXT<span style="color:#00a">)</span>
+</span></span></code></pre></div><ul>
+<li>Builds the container image using <strong>Podman or Docker</strong>.</li>
+<li>Ensures required files (<code>BUILD_DEPS</code>) exist before building.</li>
+<li>Tags the image as <code>r-quarto:latest</code>.</li>
+</ul>
+<hr>
+<h3 id="6-running-a-test-container"><strong>6. Running a Test Container</strong><a hidden class="anchor" aria-hidden="true" href="#6-running-a-test-container">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">test</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> run --rm --user=root -it -v <span style="color:#00a">$(</span>PWD<span style="color:#00a">)</span>:/home/dockeruser <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> bash
+</span></span></code></pre></div><ul>
+<li>Starts a container <strong>interactively</strong> (<code>-it</code>) with a <strong>root user</strong>.</li>
+<li>Mounts the current directory (<code>$(PWD)</code>) inside the container at <code>/home/dockeruser</code>.</li>
+<li>Runs a <code>bash</code> shell.</li>
+<li><strong><code>--rm</code></strong> removes the container after exit.</li>
+</ul>
+<hr>
+<h3 id="7-saving-the-image-to-a-compressed-tarball"><strong>7. Saving the Image to a Compressed Tarball</strong><a hidden class="anchor" aria-hidden="true" href="#7-saving-the-image-to-a-compressed-tarball">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">save</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> save <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span> | gzip &gt; <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>.tar.gz
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image saved as </span><span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span><span style="color:#a50">.tar.gz&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Exports (<code>save</code>) the container image to a <code>.tar.gz</code> file for easy sharing.</li>
+<li>Uses <code>gzip</code> to compress it.</li>
+<li>Prints a confirmation message.</li>
+</ul>
+<hr>
+<h3 id="8-loading-a-saved-image"><strong>8. Loading a Saved Image</strong><a hidden class="anchor" aria-hidden="true" href="#8-loading-a-saved-image">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">load</span>:
+</span></span><span style="display:flex;"><span>	gunzip -c <span style="color:#00a">$(</span>IMG_NAME<span style="color:#00a">)</span>.tar.gz | <span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> load
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image </span><span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span><span style="color:#a50"> loaded&#34;</span>
+</span></span></code></pre></div><ul>
+<li><strong>Uncompresses</strong> (<code>gunzip -c</code>) the saved <code>.tar.gz</code> file.</li>
+<li><strong>Loads</strong> the image into Docker/Podman.</li>
+<li>Prints a confirmation message.</li>
+</ul>
+<hr>
+<h3 id="9-cleaning-up-removing-the-image"><strong>9. Cleaning Up (Removing the Image)</strong><a hidden class="anchor" aria-hidden="true" href="#9-cleaning-up-removing-the-image">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-make" data-lang="make"><span style="display:flex;"><span><span style="color:#0a0">clean</span>:
+</span></span><span style="display:flex;"><span>	<span style="color:#00a">$(</span>ENGINE<span style="color:#00a">)</span> rmi -f <span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span>
+</span></span><span style="display:flex;"><span>	@echo <span style="color:#a50">&#34;Docker image </span><span style="color:#00a">$(</span>IMG<span style="color:#00a">)</span><span style="color:#a50"> removed&#34;</span>
+</span></span></code></pre></div><ul>
+<li>Removes (<code>rmi -f</code>) the image from the system.</li>
+<li>Prints a confirmation message.</li>
+</ul>
+<hr>
+<h2 id="how-to-use-this-makefile"><strong>How to Use This Makefile</strong><a hidden class="anchor" aria-hidden="true" href="#how-to-use-this-makefile">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Command</th>
+          <th>What it Does</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>make</code></td>
+          <td>Builds and tests the image (<code>make all</code>)</td>
+      </tr>
+      <tr>
+          <td><code>make build</code></td>
+          <td>Builds the container image</td>
+      </tr>
+      <tr>
+          <td><code>make test</code></td>
+          <td>Runs an interactive test container</td>
+      </tr>
+      <tr>
+          <td><code>make save</code></td>
+          <td>Saves the image as a <code>.tar.gz</code> file</td>
+      </tr>
+      <tr>
+          <td><code>make load</code></td>
+          <td>Loads the image from <code>.tar.gz</code></td>
+      </tr>
+      <tr>
+          <td><code>make clean</code></td>
+          <td>Deletes the image from the system</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="final-thoughts"><strong>Final Thoughts</strong><a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Using <strong>GNU Make</strong> with <strong>Docker</strong> (or <strong>Podman</strong>) provides a structured, repeatable, and automated way to manage container builds and executions. By defining targets in a <code>Makefile</code>, you simplify commands and ensure consistency in your development workflow.</p>
+<p>🚀 Happy coding, and may your containers always build successfully! 🎯</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/gnu-make/">GNU Make</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/podman/">Podman</a></li>
+      <li><a href="http://localhost:1313/tags/automation/">Automation</a></li>
+      <li><a href="http://localhost:1313/tags/reproducibility/">Reproducibility</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="http://localhost:1313/">Blazej M. Baczkowski</a></span> ·     
+    <span>
+    Powered by 
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/pmichaillat/hugo-website/" rel="noopener" target="_blank">a modified version</a>
+         of 
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>

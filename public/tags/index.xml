@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Blazej M. Baczkowski</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Blazej M. Baczkowski</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gibbs</title>
+      <link>http://localhost:1313/tags/gibbs/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gibbs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HMC</title>
+      <link>http://localhost:1313/tags/hmc/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JAGS</title>
+      <link>http://localhost:1313/tags/jags/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jags/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCMC</title>
+      <link>http://localhost:1313/tags/mcmc/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>STAN</title>
+      <link>http://localhost:1313/tags/stan/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory</title>
+      <link>http://localhost:1313/tags/memory/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayesian Coginitive Modeling</title>
+      <link>http://localhost:1313/tags/bayesian-coginitive-modeling/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bayesian-coginitive-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Episodic Memory</title>
+      <link>http://localhost:1313/tags/episodic-memory/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/episodic-memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GNU Make</title>
+      <link>http://localhost:1313/tags/gnu-make/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gnu-make/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Podman</title>
+      <link>http://localhost:1313/tags/podman/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/podman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recognition</title>
+      <link>http://localhost:1313/tags/recognition/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/recognition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reproducibility</title>
+      <link>http://localhost:1313/tags/reproducibility/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Conditioning</title>
+      <link>http://localhost:1313/tags/threat-conditioning/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-conditioning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apaquarto</title>
+      <link>http://localhost:1313/tags/apaquarto/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apaquarto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quarto</title>
+      <link>http://localhost:1313/tags/quarto/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quarto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Science</title>
+      <link>http://localhost:1313/tags/open-science/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Replicability</title>
+      <link>http://localhost:1313/tags/replicability/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/replicability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robustness</title>
+      <link>http://localhost:1313/tags/robustness/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/robustness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>B.Sc.</title>
+      <link>http://localhost:1313/tags/b.sc./</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/b.sc./</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logic</title>
+      <link>http://localhost:1313/tags/logic/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methodology</title>
+      <link>http://localhost:1313/tags/methodology/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy of Science</title>
+      <link>http://localhost:1313/tags/philosophy-of-science/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/philosophy-of-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psychology</title>
+      <link>http://localhost:1313/tags/psychology/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/psychology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cognitive Maps</title>
+      <link>http://localhost:1313/tags/cognitive-maps/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cognitive-maps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generalisation</title>
+      <link>http://localhost:1313/tags/generalisation/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/generalisation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory Integration</title>
+      <link>http://localhost:1313/tags/memory-integration/</link>
+      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memory-integration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sensory Pre-Conditioning</title>
+      <link>http://localhost:1313/tags/sensory-pre-conditioning/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sensory-pre-conditioning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emotion</title>
+      <link>http://localhost:1313/tags/emotion/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/emotion/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>General Psychology</title>
+      <link>http://localhost:1313/tags/general-psychology/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/general-psychology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Motivation</title>
+      <link>http://localhost:1313/tags/motivation/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/motivation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Decision Making</title>
+      <link>http://localhost:1313/tags/decision-making/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/decision-making/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transfer</title>
+      <link>http://localhost:1313/tags/transfer/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/transfer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>FMRI</title>
+      <link>http://localhost:1313/tags/fmri/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fmri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meta-Science</title>
+      <link>http://localhost:1313/tags/meta-science/</link>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/meta-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Default Mode Network</title>
+      <link>http://localhost:1313/tags/default-mode-network/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/default-mode-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fear</title>
+      <link>http://localhost:1313/tags/fear/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/fear/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Salience Network</title>
+      <link>http://localhost:1313/tags/salience-network/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/salience-network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arousal</title>
+      <link>http://localhost:1313/tags/arousal/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/arousal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Functional Connectivity</title>
+      <link>http://localhost:1313/tags/functional-connectivity/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/functional-connectivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Borderline Personality Disorder</title>
+      <link>http://localhost:1313/tags/borderline-personality-disorder/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/borderline-personality-disorder/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emotion Regulation</title>
+      <link>http://localhost:1313/tags/emotion-regulation/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/emotion-regulation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Resting-State</title>
+      <link>http://localhost:1313/tags/resting-state/</link>
+      <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/resting-state/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Empirical</title>
+      <link>http://localhost:1313/tags/empirical/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/empirical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lab</title>
+      <link>http://localhost:1313/tags/lab/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/lab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Practical</title>
+      <link>http://localhost:1313/tags/practical/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/practical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psychophysiology</title>
+      <link>http://localhost:1313/tags/psychophysiology/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/psychophysiology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat</title>
+      <link>http://localhost:1313/tags/threat/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Virtual Reality</title>
+      <link>http://localhost:1313/tags/virtual-reality/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/virtual-reality/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
