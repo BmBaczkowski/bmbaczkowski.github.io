@@ -61,7 +61,7 @@ params:
           enabled: true
           title: Dr. Blazej M. Baczkowski
           subtitle: |
-            I am a cognitive psychologist with a strong passion for methodology and statistics, which has driven me to develop advanced analytical and programming skills. My past research primarily focused on how individuals use mnemonic processes to protect themselves from danger despite minimal aversive experience. Aside, I offer consulting and courses on statistical modeling and inference. Currently, writing an open book on *Open Science* -- covering replicability, reproducibility, and robustness -- to provide students with a solid foundation for conducting high-quality research. Blogging on topics in data science and engineering.
+            I am a cognitive psychologist with a strong passion for methodology and statistics, which has driven me to develop advanced analytical and programming skills. My past research mainly explored how individuals use associative learning to gauge danger despite minimal aversive experience. I also looked at the spatio-temporal structure of cortical networks underlying emotional learning and cognitive emotion regulation using fMRI in healthy individuals and psychiatric patients. Beyond research, I offer consulting and courses on statistical modeling and inference. Currently, writing an open book on *Open Science* -- covering replicability, reproducibility, and robustness -- to equip students with a solid foundation for conducting high-quality research. Blogging on topics in data science and engineering.
           imageUrl: "18167621.png"
           imageWidth: 160
           imageHeight: 160
@@ -96,6 +96,8 @@ params:
           url: https://scholar.google.com/citations?user=Mt3ggY8AAAAJ&hl=en
         - name: github
           url: https://github.com/bmbaczkowski
+        - name: woodwork
+          url: woodwork
         # - name: linkedin
         #   url: https://github.com/bmbaczkowski
         # - name: psyarxiv

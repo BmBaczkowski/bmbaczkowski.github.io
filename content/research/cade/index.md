@@ -29,7 +29,7 @@ This was my first (and possibly best) research internship where I learned Python
 ##### Abstract 
 
 
-> Room 101 is an immersive virtual environment designed that we developed to study the waxing and waning of threats in an unpredictable environment. Participants encounter a series of threats including startling events (e.g., explosions) as well as more prolonged threats (e.g., spiders, a collapsing floor).  Using a head-mounted display, participants wander around the room as these events emerge. Meanwhile we measure their peripheral physiological responses. Afterwards, we play a video recording of the participant's experience while they provide a continuous rating of their subjective arousal. -- *sourced from* [LifeLikeLab](https://www.lifelikelab.science/room101)
+> Room 101 is an immersive virtual environment designed to study the waxing and waning of threats in an unpredictable environment. Participants encounter a series of threats including startling events (e.g., explosions) as well as more prolonged threats (e.g., spiders, a collapsing floor).  Using a head-mounted display, participants wander around the room as these events emerge. Meanwhile we measure their peripheral physiological responses. Afterwards, we play a video recording of the participant's experience while they provide a continuous rating of their subjective arousal. -- *sourced from* [LifeLikeLab](https://www.lifelikelab.science/room101)
 
 ---
 
