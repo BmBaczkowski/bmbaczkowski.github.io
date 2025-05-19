@@ -2,77 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 16 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Latent Mixture Models with Covariate-Dependent Class Membership</title>
+      <link>http://localhost:1313/blog/blog4/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/blog4/</guid>
+      <description>How to incorporate a covariate in a latent mixture model?</description>
+    </item>
     <item>
       <title>Latent mixture models: JAGS vs. Stan</title>
-      <link>https://bmbaczkowski.github.io/blog/blog3/</link>
+      <link>http://localhost:1313/blog/blog3/</link>
       <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog3/</guid>
+      <guid>http://localhost:1313/blog/blog3/</guid>
       <description>How to implement latent mixture models in JAGS vs. Stan?</description>
     </item>
     <item>
       <title>Principles of memory</title>
-      <link>https://bmbaczkowski.github.io/courses/memory/</link>
+      <link>http://localhost:1313/courses/memory/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/memory/</guid>
+      <guid>http://localhost:1313/courses/memory/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Woodwork</title>
-      <link>https://bmbaczkowski.github.io/woodwork/</link>
+      <link>http://localhost:1313/woodwork/</link>
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/woodwork/</guid>
+      <guid>http://localhost:1313/woodwork/</guid>
       <description>Hobby</description>
     </item>
     <item>
       <title>Emotional learning and episodic memory organisation</title>
-      <link>https://bmbaczkowski.github.io/research/unravel/</link>
+      <link>http://localhost:1313/research/unravel/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/unravel/</guid>
+      <guid>http://localhost:1313/research/unravel/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Streamlining Docker Workflows with GNU Make</title>
-      <link>https://bmbaczkowski.github.io/blog/blog2/</link>
+      <link>http://localhost:1313/blog/blog2/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog2/</guid>
+      <guid>http://localhost:1313/blog/blog2/</guid>
       <description>How to build, test, and run Docker containers automatically with GNU Make?</description>
     </item>
     <item>
       <title>Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker</title>
-      <link>https://bmbaczkowski.github.io/blog/blog1/</link>
+      <link>http://localhost:1313/blog/blog1/</link>
       <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog1/</guid>
+      <guid>http://localhost:1313/blog/blog1/</guid>
       <description>How to use Quarto in a Docker container?</description>
     </item>
     <item>
       <title>Open Science: replicability, reproducibility, and robustness</title>
-      <link>https://bmbaczkowski.github.io/books/book1/</link>
+      <link>http://localhost:1313/books/book1/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/books/book1/</guid>
+      <guid>http://localhost:1313/books/book1/</guid>
       <description>This is an open book I am currently writing on Open Science — covering replicability, reproducibility, and robustness — to provide students with a solid foundation for conducting high-quality research. A selection of exemplary chapters is available.</description>
     </item>
     <item>
       <title>Open Science: from replication crisis to credibility revolution</title>
-      <link>https://bmbaczkowski.github.io/courses/openscience/</link>
+      <link>http://localhost:1313/courses/openscience/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/openscience/</guid>
+      <guid>http://localhost:1313/courses/openscience/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Consulting</title>
-      <link>https://bmbaczkowski.github.io/consulting/</link>
+      <link>http://localhost:1313/consulting/</link>
       <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/consulting/</guid>
+      <guid>http://localhost:1313/consulting/</guid>
       <description>&lt;hr&gt;
 &lt;div style=&#34;display: flex; justify-content: flex-start; align-items: center;&#34;&gt;
     &lt;p&gt;I offer consulting and courses on statistical modeling and inference. &lt;/p&gt;
-    &lt;img src=&#34;https://bmbaczkowski.github.io/images/bayes.png&#34; alt=&#34;Bayes&#34; style=&#34;width: 150px; height: auto; margin-left: 15px;&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/bayes.png&#34; alt=&#34;Bayes&#34; style=&#34;width: 150px; height: auto; margin-left: 15px;&#34;&gt;
 &lt;/div&gt;
 &lt;p&gt;Exemplary courses:&lt;/p&gt;
 &lt;ul&gt;
@@ -84,9 +91,9 @@
     </item>
     <item>
       <title>Location</title>
-      <link>https://bmbaczkowski.github.io/location/</link>
+      <link>http://localhost:1313/location/</link>
       <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/location/</guid>
+      <guid>http://localhost:1313/location/</guid>
       <description>&lt;hr&gt;
 &lt;h4 id=&#34;mailing-address&#34;&gt;Mailing address&lt;/h4&gt;
 &lt;p&gt;Dr. Blazej M. Baczkowski&lt;br&gt;
@@ -100,93 +107,93 @@ Europastraße 6&lt;br&gt;
     </item>
     <item>
       <title>Foundations of Scientific Thinking and Research Methods in Psychology</title>
-      <link>https://bmbaczkowski.github.io/courses/twa/</link>
+      <link>http://localhost:1313/courses/twa/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/twa/</guid>
+      <guid>http://localhost:1313/courses/twa/</guid>
       <description>This is an arXiv repository of materials for a lecture series offered at the University of Hamburg for undergraduate psychology students in 2022 and 2023.</description>
     </item>
     <item>
       <title>Inferring danger with minimal aversive experience</title>
-      <link>https://bmbaczkowski.github.io/papers/tics/</link>
+      <link>http://localhost:1313/papers/tics/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/tics/</guid>
+      <guid>http://localhost:1313/papers/tics/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Constructing knowledge to predict threats</title>
-      <link>https://bmbaczkowski.github.io/research/hh_imminence/</link>
+      <link>http://localhost:1313/research/hh_imminence/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/hh_imminence/</guid>
+      <guid>http://localhost:1313/research/hh_imminence/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Vertiefungsseminar Allgemeine Psychologie II</title>
-      <link>https://bmbaczkowski.github.io/courses/hamburg/</link>
+      <link>http://localhost:1313/courses/hamburg/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/hamburg/</guid>
+      <guid>http://localhost:1313/courses/hamburg/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Aversive learning and transfer in structured environments</title>
-      <link>https://bmbaczkowski.github.io/research/doeller/</link>
+      <link>http://localhost:1313/research/doeller/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/doeller/</guid>
+      <guid>http://localhost:1313/research/doeller/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Variability in the analysis of a single neuroimaging dataset by many teams</title>
-      <link>https://bmbaczkowski.github.io/papers/nature/</link>
+      <link>http://localhost:1313/papers/nature/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/nature/</guid>
+      <guid>http://localhost:1313/papers/nature/</guid>
       <description>I had the privilege of being part of a large-scale meta-science project analyzing neuroimaging data. Thank you for this opportunity!</description>
     </item>
     <item>
       <title>Pavlovian threat conditioning retrospectively modulates episodic memory structured by pre-existing knowledge of predictive relations</title>
-      <link>https://bmbaczkowski.github.io/research/remco/</link>
+      <link>http://localhost:1313/research/remco/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/remco/</guid>
+      <guid>http://localhost:1313/research/remco/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory</title>
-      <link>https://bmbaczkowski.github.io/research/emerald/</link>
+      <link>http://localhost:1313/research/emerald/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
+      <guid>http://localhost:1313/research/emerald/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Fear acquisition induces spatio-temporal patterns of activity from salience to default mode regions</title>
-      <link>https://bmbaczkowski.github.io/research/mpi/</link>
+      <link>http://localhost:1313/research/mpi/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/mpi/</guid>
+      <guid>http://localhost:1313/research/mpi/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Shifts of the amygdala coupling with dorsal and ventral medial PFC are associated with fluctuations in arousal</title>
-      <link>https://bmbaczkowski.github.io/papers/berlin/</link>
+      <link>http://localhost:1313/papers/berlin/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/berlin/</guid>
+      <guid>http://localhost:1313/papers/berlin/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Deficient amygdala–prefrontal intrinsic connectivity after effortful emotion regulation in borderline personality disorder</title>
-      <link>https://bmbaczkowski.github.io/papers/maastricht/</link>
+      <link>http://localhost:1313/papers/maastricht/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/maastricht/</guid>
+      <guid>http://localhost:1313/papers/maastricht/</guid>
       <description>Studying emotion regulation in Borderline Personality Disorder using fMRI</description>
     </item>
     <item>
       <title>Arxiv</title>
-      <link>https://bmbaczkowski.github.io/courses/arxiv/</link>
+      <link>http://localhost:1313/courses/arxiv/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/arxiv/</guid>
+      <guid>http://localhost:1313/courses/arxiv/</guid>
       <description>I also used to teach at Maastricht University (the Netherlands) and Poznan University (Poland).</description>
     </item>
     <item>
       <title>The waxing and waning of threats in an unpredictable immersive virtual environment</title>
-      <link>https://bmbaczkowski.github.io/research/cade/</link>
+      <link>http://localhost:1313/research/cade/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/cade/</guid>
+      <guid>http://localhost:1313/research/cade/</guid>
       <description>Designing immersive virtual reality to study behavioural response to threats in an unpredictable environment.</description>
     </item>
   </channel>

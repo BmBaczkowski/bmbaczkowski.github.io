@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Default Mode Network on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/default-mode-network/</link>
+    <link>http://localhost:1313/tags/default-mode-network/</link>
     <description>Recent content in Default Mode Network on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/default-mode-network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/default-mode-network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fear acquisition induces spatio-temporal patterns of activity from salience to default mode regions</title>
-      <link>https://bmbaczkowski.github.io/research/mpi/</link>
+      <link>http://localhost:1313/research/mpi/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/mpi/</guid>
+      <guid>http://localhost:1313/research/mpi/</guid>
       <description>DESC</description>
     </item>
   </channel>

@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Memory Integration on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/memory-integration/</link>
+    <link>http://localhost:1313/tags/memory-integration/</link>
     <description>Recent content in Memory Integration on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/memory-integration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/memory-integration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Inferring danger with minimal aversive experience</title>
-      <link>https://bmbaczkowski.github.io/papers/tics/</link>
+      <link>http://localhost:1313/papers/tics/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/tics/</guid>
+      <guid>http://localhost:1313/papers/tics/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Constructing knowledge to predict threats</title>
-      <link>https://bmbaczkowski.github.io/research/hh_imminence/</link>
+      <link>http://localhost:1313/research/hh_imminence/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/hh_imminence/</guid>
+      <guid>http://localhost:1313/research/hh_imminence/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Pavlovian threat conditioning retrospectively modulates episodic memory structured by pre-existing knowledge of predictive relations</title>
-      <link>https://bmbaczkowski.github.io/research/remco/</link>
+      <link>http://localhost:1313/research/remco/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/remco/</guid>
+      <guid>http://localhost:1313/research/remco/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory</title>
-      <link>https://bmbaczkowski.github.io/research/emerald/</link>
+      <link>http://localhost:1313/research/emerald/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
+      <guid>http://localhost:1313/research/emerald/</guid>
       <description>Description</description>
     </item>
   </channel>
