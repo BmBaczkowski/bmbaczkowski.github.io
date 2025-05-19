@@ -6,8 +6,15 @@
     <description>Recent content in Reproducibility on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Latent Mixture Models with Covariate-Dependent Class Membership</title>
+      <link>http://localhost:1313/blog/blog5/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/blog5/</guid>
+      <description>How to incorporate a covariate in a latent mixture model?</description>
+    </item>
     <item>
       <title>Streamlining Docker Workflows with GNU Make</title>
       <link>http://localhost:1313/blog/blog2/</link>
