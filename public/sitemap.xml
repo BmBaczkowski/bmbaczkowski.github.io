@@ -2,268 +2,280 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://bmbaczkowski.github.io/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/blog/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/git/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/git-annex/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/blog/blog6/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/reproducibility/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/version-control/</loc>
+    <lastmod>2025-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/tags/containers/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://bmbaczkowski.github.io/blog/blog5/</loc>
     <lastmod>2025-05-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/containers/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/reproducibility/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/blog5/</loc>
-    <lastmod>2025-05-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/classes/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/classes/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/individual-differences/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/individual-differences/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/latent/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/latent/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mixture/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/mixture/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog4/</loc>
+    <loc>https://bmbaczkowski.github.io/blog/blog4/</loc>
     <lastmod>2025-05-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gibbs/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/gibbs/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hmc/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/hmc/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/jags/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/jags/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog3/</loc>
+    <loc>https://bmbaczkowski.github.io/blog/blog3/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/mcmc/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/mcmc/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stan/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/stan/</loc>
     <lastmod>2025-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/memory/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/memory/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/memory/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/memory/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/woodwork/</loc>
+    <loc>https://bmbaczkowski.github.io/woodwork/</loc>
     <lastmod>2025-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/automation/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/automation/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/bayesian-coginitive-modeling/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/bayesian-coginitive-modeling/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/docker/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/unravel/</loc>
+    <loc>https://bmbaczkowski.github.io/research/unravel/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/episodic-memory/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/episodic-memory/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/gnu-make/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/gnu-make/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/podman/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/podman/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/recognition/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/recognition/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/</loc>
+    <loc>https://bmbaczkowski.github.io/research/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog2/</loc>
+    <loc>https://bmbaczkowski.github.io/blog/blog2/</loc>
     <lastmod>2025-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/threat-conditioning/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/threat-conditioning/</loc>
     <lastmod>2025-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/apaquarto/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/apaquarto/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/blog/blog1/</loc>
+    <loc>https://bmbaczkowski.github.io/blog/blog1/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/quarto/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/quarto/</loc>
     <lastmod>2025-02-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/books/</loc>
+    <loc>https://bmbaczkowski.github.io/books/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/open-science/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/open-science/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/books/book1/</loc>
+    <loc>https://bmbaczkowski.github.io/books/book1/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/replicability/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/replicability/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/robustness/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/robustness/</loc>
     <lastmod>2025-02-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/openscience/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/openscience/</loc>
     <lastmod>2024-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/consulting/</loc>
+    <loc>https://bmbaczkowski.github.io/consulting/</loc>
     <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/location/</loc>
+    <loc>https://bmbaczkowski.github.io/location/</loc>
     <lastmod>2024-05-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/b.sc./</loc>
+    <loc>https://bmbaczkowski.github.io/tags/b.sc./</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/twa/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/twa/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/logic/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/logic/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/methodology/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/methodology/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/philosophy-of-science/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/philosophy-of-science/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/psychology/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/psychology/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cognitive-maps/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/cognitive-maps/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/generalisation/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/generalisation/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/tics/</loc>
+    <loc>https://bmbaczkowski.github.io/papers/tics/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/learning/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/learning/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/memory-integration/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/memory-integration/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/</loc>
+    <loc>https://bmbaczkowski.github.io/papers/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/hh_imminence/</loc>
+    <loc>https://bmbaczkowski.github.io/research/hh_imminence/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sensory-pre-conditioning/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/sensory-pre-conditioning/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emotion/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/emotion/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/general-psychology/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/general-psychology/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/motivation/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/motivation/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/hamburg/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/hamburg/</loc>
     <lastmod>2022-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/doeller/</loc>
+    <loc>https://bmbaczkowski.github.io/research/doeller/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/decision-making/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/decision-making/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/transfer/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/transfer/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fmri/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/fmri/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/meta-science/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/meta-science/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/nature/</loc>
+    <loc>https://bmbaczkowski.github.io/papers/nature/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/remco/</loc>
+    <loc>https://bmbaczkowski.github.io/research/remco/</loc>
     <lastmod>2020-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/emerald/</loc>
+    <loc>https://bmbaczkowski.github.io/research/emerald/</loc>
     <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/default-mode-network/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/default-mode-network/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fear/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/fear/</loc>
     <lastmod>2017-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/mpi/</loc>
+    <loc>https://bmbaczkowski.github.io/research/mpi/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/salience-network/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/salience-network/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/arousal/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/arousal/</loc>
     <lastmod>2017-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/functional-connectivity/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/functional-connectivity/</loc>
     <lastmod>2017-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/berlin/</loc>
+    <loc>https://bmbaczkowski.github.io/papers/berlin/</loc>
     <lastmod>2017-06-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/borderline-personality-disorder/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/borderline-personality-disorder/</loc>
     <lastmod>2016-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/papers/maastricht/</loc>
+    <loc>https://bmbaczkowski.github.io/papers/maastricht/</loc>
     <lastmod>2016-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/emotion-regulation/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/emotion-regulation/</loc>
     <lastmod>2016-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/resting-state/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/resting-state/</loc>
     <lastmod>2016-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/courses/arxiv/</loc>
+    <loc>https://bmbaczkowski.github.io/courses/arxiv/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/empirical/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/empirical/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/lab/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/lab/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/practical/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/practical/</loc>
     <lastmod>2015-10-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/psychophysiology/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/psychophysiology/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/research/cade/</loc>
+    <loc>https://bmbaczkowski.github.io/research/cade/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/threat/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/threat/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/virtual-reality/</loc>
+    <loc>https://bmbaczkowski.github.io/tags/virtual-reality/</loc>
     <lastmod>2015-07-12T00:00:00+00:00</lastmod>
   </url>
 </urlset>

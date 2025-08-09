@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Containers on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/containers/</link>
+    <link>https://bmbaczkowski.github.io/tags/containers/</link>
     <description>Recent content in Containers on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 19 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/containers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/containers/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Understanding Latent Mixture Models with Covariate-Dependent Class Membership</title>
-      <link>http://localhost:1313/blog/blog5/</link>
+      <title>Persistent Storage in Containers: Volumes vs. Host Mounts</title>
+      <link>https://bmbaczkowski.github.io/blog/blog5/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/blog5/</guid>
-      <description>How to incorporate a covariate in a latent mixture model?</description>
+      <guid>https://bmbaczkowski.github.io/blog/blog5/</guid>
+      <description>How do you give your container access to the files?</description>
     </item>
   </channel>
 </rss>

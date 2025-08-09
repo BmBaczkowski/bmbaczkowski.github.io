@@ -3,7 +3,7 @@ title: "Pavlovian threat conditioning retrospectively modulates episodic memory 
 date: 2020-05-01
 lastmod: 2020-05-15
 tags: ["cognitive maps", "threat conditioning", "learning", "generalisation", "memory integration"]
-author: ["Blazej M. Baczkowski", "Joe Dunsmoor", "Arno Villringer", "Marijn Kroes"]
+author: ["Blazej M. Baczkowski", "Arno Villringer"]
 description: 
     Description
 summary: |

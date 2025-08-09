@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Borderline Personality Disorder on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/borderline-personality-disorder/</link>
+    <link>https://bmbaczkowski.github.io/tags/borderline-personality-disorder/</link>
     <description>Recent content in Borderline Personality Disorder on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 12 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/borderline-personality-disorder/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/borderline-personality-disorder/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deficient amygdala–prefrontal intrinsic connectivity after effortful emotion regulation in borderline personality disorder</title>
-      <link>http://localhost:1313/papers/maastricht/</link>
+      <link>https://bmbaczkowski.github.io/papers/maastricht/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/maastricht/</guid>
+      <guid>https://bmbaczkowski.github.io/papers/maastricht/</guid>
       <description>Studying emotion regulation in Borderline Personality Disorder using fMRI</description>
     </item>
   </channel>

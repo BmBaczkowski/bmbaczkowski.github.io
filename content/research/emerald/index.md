@@ -3,7 +3,7 @@ title: "Pre-existing knowledge of environmental structure guides inferential exp
 date: 2019-05-01
 lastmod: 2019-05-15
 tags: ["cognitive maps", "threat conditioning", "learning", "generalisation", "memory integration"]
-author: ["Blazej M. Baczkowski", "Joe Dunsmoor", "Guillien Fernandez", "Arno Villringer", "Marijn Kroes"]
+author: ["Blazej M. Baczkowski", "Arno Villringer"]
 description: 
     Description
 summary: |
@@ -18,7 +18,7 @@ editPost:
 
 ---
 
-> I always dreamed to visit the [Donders Institute](https://www.ru.nl/en/donders-institute) in Nijmegen, the Netherlands. And it came true! What a place to be!!! Incredible! **Thank you so much, Marijn!!** Thank you for giving me the "space" and all the support I needed!
+> **Huge thanks** to my collaborators at the Department of Neurology [@MPI-CBS](https://www.cbs.mpg.de/en), and to everyone at [Donders Institute](https://www.ru.nl/en/donders-institute) for their support with study design and data collection. 
 
 ---
 
@@ -38,7 +38,7 @@ To protect from danger, individuals learn to recognise threats through aversive 
 
 ### Acknowledgment
 
-BMB was supported by the Max Planck Society, the International Max Planck Research School “NeuroCom”, University of Leipzig, and Leibniz Programm of the Research Academy Leipzig. MCWK was supported by an H2020 Marie Sklodowska-Curie fellowship and a Branco Weiss fellowship - Society in Science.
+BMB was supported by the Max Planck Society, the International Max Planck Research School “NeuroCom”, University of Leipzig, and Leibniz Program of the Research Academy Leipzig.
 
 ## License 
 

@@ -22,6 +22,13 @@ editPost:
 
 ---
 
+<figure>
+  <img src="gp_mdl.png" alt="Generative Model Diagram">
+  <figcaption>Figure: Graphical model of the extended model with a Gaussian Process (GP) prior over the memory recognition parameters</figcaption>
+</figure>
+
+---
+
 ![](gp.png)
 
 ---
