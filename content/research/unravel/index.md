@@ -48,3 +48,4 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 #### Download 
 
 [Preprint [PDF]](main.pdf)
+[Preprint -- supplement [PDF]](sm.pdf)
