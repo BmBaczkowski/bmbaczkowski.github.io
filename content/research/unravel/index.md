@@ -1,7 +1,7 @@
 ---
 title: "Emotional learning and episodic memory organisation" 
 date: 2025-03-01
-lastmod: 2025-03-15
+lastmod: 2025-09-12
 tags: ["episodic memory", "threat conditioning", "recognition", "bayesian coginitive modeling"]
 author: ["Blazej M. Baczkowski", "Michiko Sakaki", "Felix Kalbe", "Kou Murayama", "Lars Schwabe"]
 description: 
@@ -13,8 +13,8 @@ cover:
     alt: "Concept"
     relative: false
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://osf.io/preprints/psyarxiv/c5fsv_v1"
+    Text: "Preprint"
 
 ---
 
