@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Version Control on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/version-control/</link>
+    <link>http://localhost:1313/tags/version-control/</link>
     <description>Recent content in Version Control on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/version-control/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing Research Data with Git Annex: Exporting to Public Repositories</title>
-      <link>https://bmbaczkowski.github.io/blog/blog6/</link>
+      <link>http://localhost:1313/blog/blog6/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog6/</guid>
+      <guid>http://localhost:1313/blog/blog6/</guid>
       <description>How to export data using Git Annex to external data repository (e.g., OSF)</description>
     </item>
   </channel>

@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Reproducibility on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/reproducibility/</link>
+    <link>http://localhost:1313/tags/reproducibility/</link>
     <description>Recent content in Reproducibility on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Managing Research Data with Git Annex: Exporting to Public Repositories</title>
-      <link>https://bmbaczkowski.github.io/blog/blog6/</link>
+      <link>http://localhost:1313/blog/blog6/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog6/</guid>
+      <guid>http://localhost:1313/blog/blog6/</guid>
       <description>How to export data using Git Annex to external data repository (e.g., OSF)</description>
     </item>
     <item>
       <title>Persistent Storage in Containers: Volumes vs. Host Mounts</title>
-      <link>https://bmbaczkowski.github.io/blog/blog5/</link>
+      <link>http://localhost:1313/blog/blog5/</link>
       <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog5/</guid>
+      <guid>http://localhost:1313/blog/blog5/</guid>
       <description>How do you give your container access to the files?</description>
     </item>
     <item>
       <title>Streamlining Docker Workflows with GNU Make</title>
-      <link>https://bmbaczkowski.github.io/blog/blog2/</link>
+      <link>http://localhost:1313/blog/blog2/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog2/</guid>
+      <guid>http://localhost:1313/blog/blog2/</guid>
       <description>How to build, test, and run Docker containers automatically with GNU Make?</description>
     </item>
     <item>
       <title>Containerized Writing: Ensuring Manuscript Reproducibility with Quarto &amp; Docker</title>
-      <link>https://bmbaczkowski.github.io/blog/blog1/</link>
+      <link>http://localhost:1313/blog/blog1/</link>
       <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/blog/blog1/</guid>
+      <guid>http://localhost:1313/blog/blog1/</guid>
       <description>How to use Quarto in a Docker container?</description>
     </item>
     <item>
       <title>Open Science: replicability, reproducibility, and robustness</title>
-      <link>https://bmbaczkowski.github.io/books/book1/</link>
+      <link>http://localhost:1313/books/book1/</link>
       <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/books/book1/</guid>
+      <guid>http://localhost:1313/books/book1/</guid>
       <description>This is an open book I am currently writing on Open Science — covering replicability, reproducibility, and robustness — to provide students with a solid foundation for conducting high-quality research. A selection of exemplary chapters is available.</description>
     </item>
     <item>
       <title>Open Science: from replication crisis to credibility revolution</title>
-      <link>https://bmbaczkowski.github.io/courses/openscience/</link>
+      <link>http://localhost:1313/courses/openscience/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/openscience/</guid>
+      <guid>http://localhost:1313/courses/openscience/</guid>
       <description>DESC</description>
     </item>
   </channel>

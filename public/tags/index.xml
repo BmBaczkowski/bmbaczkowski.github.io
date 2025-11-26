@@ -2,451 +2,451 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bittorrent&#43;seeding</title>
-      <link>https://bmbaczkowski.github.io/tags/bittorrent&#43;seeding/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/bittorrent&#43;seeding/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data at Risk</title>
-      <link>https://bmbaczkowski.github.io/tags/data-at-risk/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/data-at-risk/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data Rescue Project</title>
-      <link>https://bmbaczkowski.github.io/tags/data-rescue-project/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/data-rescue-project/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Safeguarding Data</title>
-      <link>https://bmbaczkowski.github.io/tags/safeguarding-data/</link>
-      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/safeguarding-data/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git</title>
-      <link>https://bmbaczkowski.github.io/tags/git/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Git Annex</title>
-      <link>https://bmbaczkowski.github.io/tags/git-annex/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/git-annex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reproducibility</title>
-      <link>https://bmbaczkowski.github.io/tags/reproducibility/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/reproducibility/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Version Control</title>
-      <link>https://bmbaczkowski.github.io/tags/version-control/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/version-control/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Containers</title>
-      <link>https://bmbaczkowski.github.io/tags/containers/</link>
-      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/containers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Classes</title>
-      <link>https://bmbaczkowski.github.io/tags/classes/</link>
-      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/classes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Individual Differences</title>
-      <link>https://bmbaczkowski.github.io/tags/individual-differences/</link>
-      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/individual-differences/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Latent</title>
-      <link>https://bmbaczkowski.github.io/tags/latent/</link>
-      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/latent/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mixture</title>
-      <link>https://bmbaczkowski.github.io/tags/mixture/</link>
-      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/mixture/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Gibbs</title>
-      <link>https://bmbaczkowski.github.io/tags/gibbs/</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/gibbs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HMC</title>
-      <link>https://bmbaczkowski.github.io/tags/hmc/</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/hmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JAGS</title>
-      <link>https://bmbaczkowski.github.io/tags/jags/</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/jags/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MCMC</title>
-      <link>https://bmbaczkowski.github.io/tags/mcmc/</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/mcmc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>STAN</title>
-      <link>https://bmbaczkowski.github.io/tags/stan/</link>
-      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/stan/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Memory</title>
-      <link>https://bmbaczkowski.github.io/tags/memory/</link>
-      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/memory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Automation</title>
-      <link>https://bmbaczkowski.github.io/tags/automation/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/automation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bayesian Coginitive Modeling</title>
-      <link>https://bmbaczkowski.github.io/tags/bayesian-coginitive-modeling/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/bayesian-coginitive-modeling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://bmbaczkowski.github.io/tags/docker/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Episodic Memory</title>
-      <link>https://bmbaczkowski.github.io/tags/episodic-memory/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/episodic-memory/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GNU Make</title>
-      <link>https://bmbaczkowski.github.io/tags/gnu-make/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/gnu-make/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Podman</title>
-      <link>https://bmbaczkowski.github.io/tags/podman/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/podman/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Recognition</title>
-      <link>https://bmbaczkowski.github.io/tags/recognition/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/recognition/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Threat Conditioning</title>
-      <link>https://bmbaczkowski.github.io/tags/threat-conditioning/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/threat-conditioning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Apaquarto</title>
-      <link>https://bmbaczkowski.github.io/tags/apaquarto/</link>
-      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/apaquarto/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Quarto</title>
-      <link>https://bmbaczkowski.github.io/tags/quarto/</link>
-      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/quarto/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Science</title>
-      <link>https://bmbaczkowski.github.io/tags/open-science/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/open-science/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Replicability</title>
-      <link>https://bmbaczkowski.github.io/tags/replicability/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/replicability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Robustness</title>
-      <link>https://bmbaczkowski.github.io/tags/robustness/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/robustness/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>B.Sc.</title>
-      <link>https://bmbaczkowski.github.io/tags/b.sc./</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/b.sc./</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Logic</title>
-      <link>https://bmbaczkowski.github.io/tags/logic/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/logic/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Methodology</title>
-      <link>https://bmbaczkowski.github.io/tags/methodology/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/methodology/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Philosophy of Science</title>
-      <link>https://bmbaczkowski.github.io/tags/philosophy-of-science/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/philosophy-of-science/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Psychology</title>
-      <link>https://bmbaczkowski.github.io/tags/psychology/</link>
-      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/psychology/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cognitive Maps</title>
-      <link>https://bmbaczkowski.github.io/tags/cognitive-maps/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/cognitive-maps/</guid>
+      <link>http://localhost:1313/tags/cognitive-maps/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cognitive-maps/</guid>
       <description></description>
     </item>
     <item>
       <title>Generalisation</title>
-      <link>https://bmbaczkowski.github.io/tags/generalisation/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/generalisation/</guid>
+      <link>http://localhost:1313/tags/generalisation/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/generalisation/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
-      <link>https://bmbaczkowski.github.io/tags/learning/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/learning/</guid>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/learning/</guid>
       <description></description>
     </item>
     <item>
       <title>Memory Integration</title>
-      <link>https://bmbaczkowski.github.io/tags/memory-integration/</link>
-      <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/memory-integration/</guid>
+      <link>http://localhost:1313/tags/memory-integration/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memory-integration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Threat Conditioning</title>
+      <link>http://localhost:1313/tags/threat-conditioning/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/threat-conditioning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bittorrent&#43;seeding</title>
+      <link>http://localhost:1313/tags/bittorrent&#43;seeding/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bittorrent&#43;seeding/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data at Risk</title>
+      <link>http://localhost:1313/tags/data-at-risk/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-at-risk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Rescue Project</title>
+      <link>http://localhost:1313/tags/data-rescue-project/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-rescue-project/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safeguarding Data</title>
+      <link>http://localhost:1313/tags/safeguarding-data/</link>
+      <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/safeguarding-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/tags/git/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git Annex</title>
+      <link>http://localhost:1313/tags/git-annex/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/git-annex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reproducibility</title>
+      <link>http://localhost:1313/tags/reproducibility/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Version Control</title>
+      <link>http://localhost:1313/tags/version-control/</link>
+      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/version-control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>http://localhost:1313/tags/containers/</link>
+      <pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Classes</title>
+      <link>http://localhost:1313/tags/classes/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/classes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Individual Differences</title>
+      <link>http://localhost:1313/tags/individual-differences/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/individual-differences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latent</title>
+      <link>http://localhost:1313/tags/latent/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/latent/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mixture</title>
+      <link>http://localhost:1313/tags/mixture/</link>
+      <pubDate>Fri, 16 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mixture/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gibbs</title>
+      <link>http://localhost:1313/tags/gibbs/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gibbs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>HMC</title>
+      <link>http://localhost:1313/tags/hmc/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/hmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>JAGS</title>
+      <link>http://localhost:1313/tags/jags/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/jags/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MCMC</title>
+      <link>http://localhost:1313/tags/mcmc/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mcmc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>STAN</title>
+      <link>http://localhost:1313/tags/stan/</link>
+      <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/stan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory</title>
+      <link>http://localhost:1313/tags/memory/</link>
+      <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayesian Coginitive Modeling</title>
+      <link>http://localhost:1313/tags/bayesian-coginitive-modeling/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bayesian-coginitive-modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Episodic Memory</title>
+      <link>http://localhost:1313/tags/episodic-memory/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/episodic-memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GNU Make</title>
+      <link>http://localhost:1313/tags/gnu-make/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gnu-make/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Podman</title>
+      <link>http://localhost:1313/tags/podman/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/podman/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Recognition</title>
+      <link>http://localhost:1313/tags/recognition/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/recognition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apaquarto</title>
+      <link>http://localhost:1313/tags/apaquarto/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/apaquarto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quarto</title>
+      <link>http://localhost:1313/tags/quarto/</link>
+      <pubDate>Wed, 12 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/quarto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Science</title>
+      <link>http://localhost:1313/tags/open-science/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Replicability</title>
+      <link>http://localhost:1313/tags/replicability/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/replicability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Robustness</title>
+      <link>http://localhost:1313/tags/robustness/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/robustness/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>B.Sc.</title>
+      <link>http://localhost:1313/tags/b.sc./</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/b.sc./</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Logic</title>
+      <link>http://localhost:1313/tags/logic/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/logic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Methodology</title>
+      <link>http://localhost:1313/tags/methodology/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/methodology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Philosophy of Science</title>
+      <link>http://localhost:1313/tags/philosophy-of-science/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/philosophy-of-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Psychology</title>
+      <link>http://localhost:1313/tags/psychology/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/psychology/</guid>
       <description></description>
     </item>
     <item>
       <title>Sensory Pre-Conditioning</title>
-      <link>https://bmbaczkowski.github.io/tags/sensory-pre-conditioning/</link>
+      <link>http://localhost:1313/tags/sensory-pre-conditioning/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/sensory-pre-conditioning/</guid>
+      <guid>http://localhost:1313/tags/sensory-pre-conditioning/</guid>
       <description></description>
     </item>
     <item>
       <title>Emotion</title>
-      <link>https://bmbaczkowski.github.io/tags/emotion/</link>
+      <link>http://localhost:1313/tags/emotion/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/emotion/</guid>
+      <guid>http://localhost:1313/tags/emotion/</guid>
       <description></description>
     </item>
     <item>
       <title>General Psychology</title>
-      <link>https://bmbaczkowski.github.io/tags/general-psychology/</link>
+      <link>http://localhost:1313/tags/general-psychology/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/general-psychology/</guid>
+      <guid>http://localhost:1313/tags/general-psychology/</guid>
       <description></description>
     </item>
     <item>
       <title>Motivation</title>
-      <link>https://bmbaczkowski.github.io/tags/motivation/</link>
+      <link>http://localhost:1313/tags/motivation/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/motivation/</guid>
+      <guid>http://localhost:1313/tags/motivation/</guid>
       <description></description>
     </item>
     <item>
       <title>Decision Making</title>
-      <link>https://bmbaczkowski.github.io/tags/decision-making/</link>
+      <link>http://localhost:1313/tags/decision-making/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/decision-making/</guid>
+      <guid>http://localhost:1313/tags/decision-making/</guid>
       <description></description>
     </item>
     <item>
       <title>Transfer</title>
-      <link>https://bmbaczkowski.github.io/tags/transfer/</link>
+      <link>http://localhost:1313/tags/transfer/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/transfer/</guid>
+      <guid>http://localhost:1313/tags/transfer/</guid>
       <description></description>
     </item>
     <item>
       <title>FMRI</title>
-      <link>https://bmbaczkowski.github.io/tags/fmri/</link>
+      <link>http://localhost:1313/tags/fmri/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/fmri/</guid>
+      <guid>http://localhost:1313/tags/fmri/</guid>
       <description></description>
     </item>
     <item>
       <title>Meta-Science</title>
-      <link>https://bmbaczkowski.github.io/tags/meta-science/</link>
+      <link>http://localhost:1313/tags/meta-science/</link>
       <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/meta-science/</guid>
+      <guid>http://localhost:1313/tags/meta-science/</guid>
       <description></description>
     </item>
     <item>
       <title>Default Mode Network</title>
-      <link>https://bmbaczkowski.github.io/tags/default-mode-network/</link>
+      <link>http://localhost:1313/tags/default-mode-network/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/default-mode-network/</guid>
+      <guid>http://localhost:1313/tags/default-mode-network/</guid>
       <description></description>
     </item>
     <item>
       <title>Fear</title>
-      <link>https://bmbaczkowski.github.io/tags/fear/</link>
+      <link>http://localhost:1313/tags/fear/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/fear/</guid>
+      <guid>http://localhost:1313/tags/fear/</guid>
       <description></description>
     </item>
     <item>
       <title>Salience Network</title>
-      <link>https://bmbaczkowski.github.io/tags/salience-network/</link>
+      <link>http://localhost:1313/tags/salience-network/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/salience-network/</guid>
+      <guid>http://localhost:1313/tags/salience-network/</guid>
       <description></description>
     </item>
     <item>
       <title>Arousal</title>
-      <link>https://bmbaczkowski.github.io/tags/arousal/</link>
+      <link>http://localhost:1313/tags/arousal/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/arousal/</guid>
+      <guid>http://localhost:1313/tags/arousal/</guid>
       <description></description>
     </item>
     <item>
       <title>Functional Connectivity</title>
-      <link>https://bmbaczkowski.github.io/tags/functional-connectivity/</link>
+      <link>http://localhost:1313/tags/functional-connectivity/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/functional-connectivity/</guid>
+      <guid>http://localhost:1313/tags/functional-connectivity/</guid>
       <description></description>
     </item>
     <item>
       <title>Borderline Personality Disorder</title>
-      <link>https://bmbaczkowski.github.io/tags/borderline-personality-disorder/</link>
+      <link>http://localhost:1313/tags/borderline-personality-disorder/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/borderline-personality-disorder/</guid>
+      <guid>http://localhost:1313/tags/borderline-personality-disorder/</guid>
       <description></description>
     </item>
     <item>
       <title>Emotion Regulation</title>
-      <link>https://bmbaczkowski.github.io/tags/emotion-regulation/</link>
+      <link>http://localhost:1313/tags/emotion-regulation/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/emotion-regulation/</guid>
+      <guid>http://localhost:1313/tags/emotion-regulation/</guid>
       <description></description>
     </item>
     <item>
       <title>Resting-State</title>
-      <link>https://bmbaczkowski.github.io/tags/resting-state/</link>
+      <link>http://localhost:1313/tags/resting-state/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/resting-state/</guid>
+      <guid>http://localhost:1313/tags/resting-state/</guid>
       <description></description>
     </item>
     <item>
       <title>Empirical</title>
-      <link>https://bmbaczkowski.github.io/tags/empirical/</link>
+      <link>http://localhost:1313/tags/empirical/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/empirical/</guid>
+      <guid>http://localhost:1313/tags/empirical/</guid>
       <description></description>
     </item>
     <item>
       <title>Lab</title>
-      <link>https://bmbaczkowski.github.io/tags/lab/</link>
+      <link>http://localhost:1313/tags/lab/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/lab/</guid>
+      <guid>http://localhost:1313/tags/lab/</guid>
       <description></description>
     </item>
     <item>
       <title>Practical</title>
-      <link>https://bmbaczkowski.github.io/tags/practical/</link>
+      <link>http://localhost:1313/tags/practical/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/practical/</guid>
+      <guid>http://localhost:1313/tags/practical/</guid>
       <description></description>
     </item>
     <item>
       <title>Psychophysiology</title>
-      <link>https://bmbaczkowski.github.io/tags/psychophysiology/</link>
+      <link>http://localhost:1313/tags/psychophysiology/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/psychophysiology/</guid>
+      <guid>http://localhost:1313/tags/psychophysiology/</guid>
       <description></description>
     </item>
     <item>
       <title>Threat</title>
-      <link>https://bmbaczkowski.github.io/tags/threat/</link>
+      <link>http://localhost:1313/tags/threat/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/threat/</guid>
+      <guid>http://localhost:1313/tags/threat/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtual Reality</title>
-      <link>https://bmbaczkowski.github.io/tags/virtual-reality/</link>
+      <link>http://localhost:1313/tags/virtual-reality/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/virtual-reality/</guid>
+      <guid>http://localhost:1313/tags/virtual-reality/</guid>
       <description></description>
     </item>
   </channel>

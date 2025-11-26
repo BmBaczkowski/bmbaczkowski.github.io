@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Memory on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/memory/</link>
+    <link>http://localhost:1313/tags/memory/</link>
     <description>Recent content in Memory on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/memory/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/memory/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Principles of memory</title>
-      <link>https://bmbaczkowski.github.io/courses/memory/</link>
+      <link>http://localhost:1313/courses/memory/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/memory/</guid>
+      <guid>http://localhost:1313/courses/memory/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Vertiefungsseminar Allgemeine Psychologie II</title>
-      <link>https://bmbaczkowski.github.io/courses/hamburg/</link>
+      <link>http://localhost:1313/courses/hamburg/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/hamburg/</guid>
+      <guid>http://localhost:1313/courses/hamburg/</guid>
       <description>DESC</description>
     </item>
   </channel>

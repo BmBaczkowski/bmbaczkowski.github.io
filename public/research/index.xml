@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Research projects on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/research/</link>
+    <link>http://localhost:1313/research/</link>
     <description>Recent content in Research projects on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aversive learning retroactively prioritizes neutral episodic memories structured by prior knowledge of predictive sequences</title>
+      <link>http://localhost:1313/research/remco/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/remco/</guid>
+      <description>Description</description>
+    </item>
     <item>
       <title>Emotional learning and episodic memory organisation</title>
-      <link>https://bmbaczkowski.github.io/research/unravel/</link>
+      <link>http://localhost:1313/research/unravel/</link>
       <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/unravel/</guid>
+      <guid>http://localhost:1313/research/unravel/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Constructing knowledge to predict threats</title>
-      <link>https://bmbaczkowski.github.io/research/hh_imminence/</link>
+      <link>http://localhost:1313/research/hh_imminence/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/hh_imminence/</guid>
+      <guid>http://localhost:1313/research/hh_imminence/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Aversive learning and transfer in structured environments</title>
-      <link>https://bmbaczkowski.github.io/research/doeller/</link>
+      <link>http://localhost:1313/research/doeller/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/doeller/</guid>
-      <description>Description</description>
-    </item>
-    <item>
-      <title>Pavlovian threat conditioning retrospectively modulates episodic memory structured by pre-existing knowledge of predictive relations</title>
-      <link>https://bmbaczkowski.github.io/research/remco/</link>
-      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/remco/</guid>
+      <guid>http://localhost:1313/research/doeller/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory</title>
-      <link>https://bmbaczkowski.github.io/research/emerald/</link>
+      <link>http://localhost:1313/research/emerald/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
+      <guid>http://localhost:1313/research/emerald/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Fear acquisition induces spatio-temporal patterns of activity from salience to default mode regions</title>
-      <link>https://bmbaczkowski.github.io/research/mpi/</link>
+      <link>http://localhost:1313/research/mpi/</link>
       <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/mpi/</guid>
+      <guid>http://localhost:1313/research/mpi/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>The waxing and waning of threats in an unpredictable immersive virtual environment</title>
-      <link>https://bmbaczkowski.github.io/research/cade/</link>
+      <link>http://localhost:1313/research/cade/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/cade/</guid>
+      <guid>http://localhost:1313/research/cade/</guid>
       <description>Designing immersive virtual reality to study behavioural response to threats in an unpredictable environment.</description>
     </item>
   </channel>

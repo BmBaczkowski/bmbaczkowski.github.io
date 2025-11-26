@@ -1,7 +1,7 @@
 ---
-title: "Pavlovian threat conditioning retrospectively modulates episodic memory structured by pre-existing knowledge of predictive relations" 
-date: 2020-05-01
-lastmod: 2020-05-15
+title: "Aversive learning retroactively prioritizes neutral episodic memories structured by prior knowledge of predictive sequences" 
+date: 2025-11-08
+lastmod: 2025-11-08
 tags: ["cognitive maps", "threat conditioning", "learning", "generalisation", "memory integration"]
 author: ["Blazej M. Baczkowski", "Arno Villringer"]
 description: 
@@ -13,8 +13,8 @@ cover:
     alt: "Concept"
     relative: false
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://osf.io/preprints/psyarxiv/q4p7d_v1"
+    Text: "Preprint"
 
 ---
 
@@ -30,9 +30,8 @@ This project has shown that cues, such as the specific sound of the gate in our 
 
 #### Abstract
 
-Individuals can infer danger by linking memories of relationships among neutral cues with later aversive experiences. However, it remains unclear how seemingly inconsequential events during encoding gain relevance for predicting future threats. Here, we tested whether Pavlovian threat conditioning retrospectively influences the long-term episodic memory of neutral events by leveraging pre-existing knowledge of their predictive relations. Young healthy adults (N=34) first learned that six semantic categories appeared in two deterministic sequences (ABC and DEF) and then incidentally encoded images of their trial-unique exemplars. Next, two sequence-ending categories (C vs. F) became differentially predictive of mild electric shocks. After 24 hours, recognition memory for pre-conditioned categories depended on sequence and position – when a sequence included a shock-predictive category, memory for its starting category (A) was prioritized at the expense of the successive category (B). These results suggest that aversive learning may retrospectively reshape episodic memories, adaptively fostering early threat anticipation.
+Linking memories of temporally separated neutral and threatening experiences can support later recognition of early warning signals. Yet it remains unclear what cognitive processes might allow the seemingly inconsequential neutral events – encoded in safe contexts and thus prone to forgetting – to nevertheless be preserved in memory well enough to inform future threat predictions. Here, we tested whether Pavlovian threat conditioning retroactively strengthens long-term episodic memory for previously encoded neutral events by leveraging prior knowledge of their predictive relations. Young adults first learned to anticipate the order of semantic categories in two deterministic sequences (A->B->C and D->E->F) through repeated presentation of images depicting category exemplars. They then incidentally encoded trial-unique exemplars from each category during sequence viewing. In a next phase, exemplars from the third-position categories were repeated such that one (C) predicted mild electric shocks, whereas the other (F) was never reinforced, creating a category-level threat association through conditioning. After 24 hours, recognition memory for exemplars of categories encoded before conditioning depended on sequence and position: when a sequence ended with a shock-predictive category, memory for its starting category (A) was prioritized over the following category (B) – an effect absent in the control categories (D and E). These results suggest that aversive learning can retroactively reshape episodic memories of neutral events when they are scaffolded by prior sequence knowledge, bridging temporal gaps and thereby potentially promoting early threat anticipation
 
-**TO BE RELEASED SOON -- STAY TUNED**
 
 ### Acknowledgment
 
