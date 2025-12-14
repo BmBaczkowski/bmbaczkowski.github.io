@@ -61,7 +61,7 @@ params:
           enabled: true
           title: Dr. Blazej M. Baczkowski
           subtitle: |
-            I am a cognitive psychologist with a strong passion for methodology and statistics, which has driven me to develop advanced analytical and programming skills. My past research mainly explored how individuals use associative learning to gauge danger despite minimal aversive experience. I also looked at the spatio-temporal structure of cortical networks underlying emotional learning and cognitive emotion regulation using fMRI in healthy individuals and psychiatric patients. Beyond research, I offer consulting and courses on statistical modeling and inference. Currently, writing an open book on *Open Science* -- covering replicability, reproducibility, and robustness -- to equip students with a solid foundation for conducting high-quality research. Blogging on topics in data science and engineering.
+            I am a cognitive psychologist passionate about statistical modeling, reproducible research workflows, and methodological rigor, with a background in behavioral and neuroimaging research on learning, memory, and emotions in healthy and clinical populations. My work increasingly emphasizes infrastructure over novelty -- building reproducible analysis pipelines, improving Bayesian modeling strategies, and supporting sustainable research data management. I teach and consult on statistics, and occasionally blog about data engineering tools and the practical challenges of making scientific work reusable, robust, and trustworthy.
           imageUrl: "18167621.png"
           imageWidth: 160
           imageHeight: 160
@@ -85,7 +85,7 @@ params:
         - name: how to pronounce my name
           url: https://namedrop.io/blazejbaczkowski
         - name: email
-          url: mailto:bm[dot]baczkowski[at]gmail[dot]com
+          url: mailto:contact[dot]blazej[at]proton[dot]me
         # - name: cv
         #   url: cv.pdf
         # - name: orcid
