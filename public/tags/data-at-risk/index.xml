@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Data at Risk on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/data-at-risk/</link>
+    <link>https://bmbaczkowski.github.io/tags/data-at-risk/</link>
     <description>Recent content in Data at Risk on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 07 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/data-at-risk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/data-at-risk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Highlights from the Data Rescue Hackathon @LMU Open Science Center</title>
-      <link>http://localhost:1313/blog/blog7/</link>
+      <link>https://bmbaczkowski.github.io/blog/blog7/</link>
       <pubDate>Thu, 07 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/blog/blog7/</guid>
+      <guid>https://bmbaczkowski.github.io/blog/blog7/</guid>
       <description>Highlights and my reflections on the Data Rescue Hackathon @LMU</description>
     </item>
   </channel>

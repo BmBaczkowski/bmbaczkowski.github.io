@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Cognitive Maps on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/cognitive-maps/</link>
+    <link>https://bmbaczkowski.github.io/tags/cognitive-maps/</link>
     <description>Recent content in Cognitive Maps on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/cognitive-maps/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/cognitive-maps/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Aversive learning retroactively prioritizes neutral episodic memories structured by prior knowledge of predictive sequences</title>
-      <link>http://localhost:1313/research/remco/</link>
+      <link>https://bmbaczkowski.github.io/research/remco/</link>
       <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/remco/</guid>
+      <guid>https://bmbaczkowski.github.io/research/remco/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Inferring danger with minimal aversive experience</title>
-      <link>http://localhost:1313/papers/tics/</link>
+      <link>https://bmbaczkowski.github.io/papers/tics/</link>
       <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/tics/</guid>
+      <guid>https://bmbaczkowski.github.io/papers/tics/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Constructing knowledge to predict threats</title>
-      <link>http://localhost:1313/research/hh_imminence/</link>
+      <link>https://bmbaczkowski.github.io/research/hh_imminence/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/hh_imminence/</guid>
+      <guid>https://bmbaczkowski.github.io/research/hh_imminence/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Aversive learning and transfer in structured environments</title>
-      <link>http://localhost:1313/research/doeller/</link>
+      <link>https://bmbaczkowski.github.io/research/doeller/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/doeller/</guid>
+      <guid>https://bmbaczkowski.github.io/research/doeller/</guid>
       <description>Description</description>
     </item>
     <item>
       <title>Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory</title>
-      <link>http://localhost:1313/research/emerald/</link>
+      <link>https://bmbaczkowski.github.io/research/emerald/</link>
       <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/emerald/</guid>
+      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
       <description>Description</description>
     </item>
   </channel>

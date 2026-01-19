@@ -31,6 +31,13 @@ menu:
         - name: Consulting
           url: consulting/
           weight: 8
+    footer:
+        - name: Impressum
+          url: /impressum/
+          weight: 1
+        - name: Dtenschutz
+          url: /datenschutz/
+          weight: 2
 
 params:
     description: |
