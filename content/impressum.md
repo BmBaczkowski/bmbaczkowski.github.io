@@ -11,7 +11,7 @@ description: "Impressum"
 ## Impressum
 
 Angaben gemäß § 5 TMG
-Dr. Manuel D. S. Hopp
+Dr. Blazej M. Baczkowski
 Europastr. 6
 72072 Tübingen
 
