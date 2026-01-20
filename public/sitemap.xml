@@ -2,31 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://bmbaczkowski.github.io/research/remco/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://bmbaczkowski.github.io/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/cognitive-maps/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/generalisation/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/learning/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/memory-integration/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/research/emerald/</loc>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/research/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/</loc>
-    <lastmod>2025-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/threat-conditioning/</loc>
+    <lastmod>2026-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://bmbaczkowski.github.io/research/remco/</loc>
     <lastmod>2025-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/bittorrent&#43;seeding/</loc>
@@ -238,9 +241,6 @@
   </url><url>
     <loc>https://bmbaczkowski.github.io/papers/nature/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://bmbaczkowski.github.io/research/emerald/</loc>
-    <lastmod>2019-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://bmbaczkowski.github.io/tags/default-mode-network/</loc>
     <lastmod>2017-06-12T00:00:00+00:00</lastmod>

@@ -6,8 +6,15 @@
     <description>Recent content in Learning on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bmbaczkowski.github.io/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Relational memory structure among prior neutral episodes guides Pavlovian threat responses</title>
+      <link>https://bmbaczkowski.github.io/research/emerald/</link>
+      <pubDate>Sat, 03 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
+      <description>Description</description>
+    </item>
     <item>
       <title>Aversive learning retroactively prioritizes neutral episodic memories structured by prior knowledge of predictive sequences</title>
       <link>https://bmbaczkowski.github.io/research/remco/</link>
@@ -34,13 +41,6 @@
       <link>https://bmbaczkowski.github.io/research/doeller/</link>
       <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
       <guid>https://bmbaczkowski.github.io/research/doeller/</guid>
-      <description>Description</description>
-    </item>
-    <item>
-      <title>Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory</title>
-      <link>https://bmbaczkowski.github.io/research/emerald/</link>
-      <pubDate>Wed, 01 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/emerald/</guid>
       <description>Description</description>
     </item>
   </channel>

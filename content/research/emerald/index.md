@@ -1,7 +1,7 @@
 ---
-title: "Pre-existing knowledge of environmental structure guides inferential expression of Pavlovian threat memory" 
-date: 2019-05-01
-lastmod: 2019-05-15
+title: "Relational memory structure among prior neutral episodes guides Pavlovian threat responses" 
+date: 2026-01-03
+lastmod: 2026-01-03
 tags: ["cognitive maps", "threat conditioning", "learning", "generalisation", "memory integration"]
 author: ["Blazej M. Baczkowski", "Arno Villringer"]
 description: 
@@ -13,8 +13,8 @@ cover:
     alt: "Concept"
     relative: false
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://osf.io/preprints/psyarxiv/rjdnz_v1"
+    Text: "Preprint"
 
 ---
 
@@ -29,10 +29,8 @@ editPost:
  
 #### Abstract
 
-To protect from danger, individuals learn to recognise threats through aversive experiences, as described by Pavlovian threat conditioning. However, Pavlovian threat memory alone is insuﬀicient to gauge danger when previously encountered threats are absent. Here, we show that, to infer risk, individuals rely on their pre-existing knowledge of environmental relations among multiple cues that were never experienced in an aversive context. We trained participants to associate pairs of novel images that together formed an abstract linear knowledge structure. The next day, the image anchored at one end of the structure acquired Pavlovian threat memory. When later exposed to the remaining images under the risk of a mild electric shock, participants showed defensive responses, both in self-reported and physiological measures, that scaled with the associative distance between the neutral and threatening cues. Our findings suggest that individuals prepare for anticipated harm according to a memory structure built from separate learning experiences.
+Learning about danger through exposure to harmful events relies on Pavlovian conditioning, which enables individuals to prepare for potential threats when encountering the same or similar warning signals in the future. Yet Pavlovian threat memories alone cannot explain defensive behavior in situations where such cues are absent. Here, we tested whether Pavlovian learning interacts with prior neutral memories acquired across multiple episodes, such that the relational structure among these memories guides defensive responses to cues never experienced in an aversive context. Participants first learned overlapping pairs of neutral images that together formed an abstract linear graph. The following day, the two images located at opposite ends of the graph were differentially paired with mild electric shocks through conditioning, thereby establishing them as threat and safety signals. When later exposed to the remaining images under risk of shock, participants exhibited graded defensive responses across self-report and physiological measures that scaled with the mnemonic proximity of each image to the shock-predictive image. These findings suggest that adaptive defense can arise from the interaction of Pavlovian associations with a pre-existing relational memory structure formed across neutral episodes, allowing individuals to prepare for danger even in situations beyond directly learned threats.
 
-
-**TO BE RELEASED SOON -- STAY TUNED**
 
 ---
 
