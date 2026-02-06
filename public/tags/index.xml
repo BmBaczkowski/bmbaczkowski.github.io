@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 03 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bmbaczkowski.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://bmbaczkowski.github.io/tags/git/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reproducibility</title>
+      <link>https://bmbaczkowski.github.io/tags/reproducibility/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/tags/reproducibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Version Control</title>
+      <link>https://bmbaczkowski.github.io/tags/version-control/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/tags/version-control/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Cognitive Maps</title>
       <link>https://bmbaczkowski.github.io/tags/cognitive-maps/</link>
@@ -72,31 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>Git</title>
-      <link>https://bmbaczkowski.github.io/tags/git/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Git Annex</title>
       <link>https://bmbaczkowski.github.io/tags/git-annex/</link>
       <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://bmbaczkowski.github.io/tags/git-annex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reproducibility</title>
-      <link>https://bmbaczkowski.github.io/tags/reproducibility/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/reproducibility/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Version Control</title>
-      <link>https://bmbaczkowski.github.io/tags/version-control/</link>
-      <pubDate>Sun, 01 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/tags/version-control/</guid>
       <description></description>
     </item>
     <item>

@@ -6,8 +6,15 @@
     <description>Recent content in Reproducibility on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://bmbaczkowski.github.io/tags/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git as research infrastructure</title>
+      <link>https://bmbaczkowski.github.io/blog/blog8/</link>
+      <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/blog/blog8/</guid>
+      <description>If your research uses code, it probably needs Git</description>
+    </item>
     <item>
       <title>Managing Research Data with Git Annex: Exporting to Public Repositories</title>
       <link>https://bmbaczkowski.github.io/blog/blog6/</link>
