@@ -6,11 +6,20 @@ tags: ["Reproducibility", "Version Control", "Git", "Git Annex"]
 author: ["Blazej M. Baczkowski"]
 description: ""
 summary: "How to export data using Git Annex to external data repository (e.g., OSF)"
+cover:
+    image: "/images/logo-with-cli.png"
+    alt: "Copyright: 2007 Henrik Nyh <http://henrik.nyh.se/>
+           2010 Joey Hess <id@joeyh.name>
+           2013 John Lawrence
+           2024 Yann Büchau <nobodyinperson at posteo de>"
+    relative: true
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://git-annex.branchable.com/"
+    Text: "Website"
 showToc: true
 disableAnchoredHeadings: false
+
+
 
 ---
 

@@ -6,9 +6,13 @@ tags: ["safeguarding data", "data at risk", "Data Rescue Project", "Bittorrent+s
 author: ["Blazej M. Baczkowski"]
 description: ""
 summary: "Highlights and my reflections on the Data Rescue Hackathon @LMU"
+cover:
+    image: "/images/ascii-art.png"
+    alt: "By Felix Schönbrodt & Philipp Sckopke"
+    relative: true
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://github.com/lmu-osc/safeguar.de-hackathon"
+    Text: "Github Page"
 showToc: true
 disableAnchoredHeadings: false
 

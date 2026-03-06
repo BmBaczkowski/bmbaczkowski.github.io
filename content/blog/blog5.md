@@ -6,6 +6,10 @@ tags: ["Reproducibility", "Containers"]
 author: ["Blazej M. Baczkowski"]
 description: ""
 summary: "How do you give your container access to the files?"
+cover:
+    image: "/images/docker_img.png"
+    alt: ""
+    relative: true
 editPost:
     URL: ""
     Text: ""

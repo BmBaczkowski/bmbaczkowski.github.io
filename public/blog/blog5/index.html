@@ -29,11 +29,13 @@
 </noscript><meta property="og:title" content="Persistent Storage in Containers: Volumes vs. Host Mounts" />
 <meta property="og:description" content="How do you give your container access to the files?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bmbaczkowski.github.io/blog/blog5/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://bmbaczkowski.github.io/blog/blog5/" />
+<meta property="og:image" content="https://bmbaczkowski.github.io/blog/blog5/images/docker_img.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2025-05-19T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-05-19T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bmbaczkowski.github.io/blog/blog5/images/docker_img.png" />
 <meta name="twitter:title" content="Persistent Storage in Containers: Volumes vs. Host Mounts"/>
 <meta name="twitter:description" content="How do you give your container access to the files?"/>
 
@@ -71,7 +73,7 @@
   "articleBody": "Volumes vs. Host Mounts in Docker Whether you’re training machine learning models, analyzing large datasets, or running reproducible pipelines, containers (via Docker or Podman) offer a powerful way to package your tools and environments. But when it comes to handling data – datasets, results, model checkpoints – you need persistent storage.\nYou have two main options:\nVolumes – container-native. Host Directory Mounts – Connects your local file system to the container. Here’s how each works, and when you might use them, with examples tailored to data science workflows.\n🧪 Option 1: Volumes — Clean and Container-Native Volumes are designed specifically for containers. They keep your data separate from your code and can be reused across container runs.\n🔍 Example: Storing model outputs using a Docker volume # Create a named volume docker volume create model_output # Run a container with the volume mounted docker run -it --rm \\ -v model_output:/app/output \\ python:3.10 \\ bash -c \"echo 'Training complete!' \u003e /app/output/log.txt\" You can inspect the volume’s contents later:\n# Access volume contents in a temporary container docker run --rm -v model_output:/data alpine cat /data/log.txt Use volumes when:\nYou want clean separation between code and data. You’re deploying or sharing a containerized analysis pipeline. You care about reproducibility and minimizing host pollution. 💻 Option 2: Host Directory Mounts — Fast and Accessible Mounting a host directory allows you to directly work with files on your machine, perfect for development or quick iteration.\n🔍 Example: Using your local dataset in a containerized notebook Assume you have a dataset in ~/projects/data.\ndocker run -it --rm \\ -p 8888:8888 \\ -v ~/projects/data:/home/jovyan/data \\ jupyter/scipy-notebook You can now access your dataset inside Jupyter at /home/jovyan/data and make changes from your local machine instantly.\nUse host mounts when:\nYou’re prototyping or working with live data. You want real-time access to scripts, notebooks, or results. You prefer editing with local tools (e.g., VS Code, pandas profiling). 🏁 Final Thoughts For academic and data science projects, a hybrid approach works best:\nUse host mounts for flexibility during development. Switch to volumes for long-running jobs and reproducibility. By mastering both methods, you can create robust, portable, and efficient data workflows that adapt to your research and computational needs.\n",
   "wordCount" : "368",
   "inLanguage": "en",
-  "datePublished": "2025-05-19T00:00:00Z",
+  "image":"https://bmbaczkowski.github.io/blog/blog5/images/docker_img.png","datePublished": "2025-05-19T00:00:00Z",
   "dateModified": "2025-05-19T00:00:00Z",
   "author":[{
     "@type": "Person",

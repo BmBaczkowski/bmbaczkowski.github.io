@@ -6,6 +6,10 @@ tags: ["Latent", "Mixture", "Classes", "Individual Differences"]
 author: ["Blazej M. Baczkowski"]
 description: ""
 summary: "How to incorporate a covariate in a latent mixture model?"
+cover:
+    image: "/images/latent_mixture.png"
+    alt: "By Michael D. Lee"
+    relative: true
 editPost:
     URL: ""
     Text: ""

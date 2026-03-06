@@ -6,9 +6,13 @@ tags: ["git", "version control", "reproducibility"]
 author: ["Blazej M. Baczkowski"]
 description: ""
 summary: "If your research uses code, it probably needs Git"
+cover:
+    image: "/images/Git-logo.svg.png"
+    alt: ""
+    relative: true
 editPost:
-    URL: ""
-    Text: ""
+    URL: "https://git-scm.com/"
+    Text: "Website"
 showToc: true
 disableAnchoredHeadings: false
 

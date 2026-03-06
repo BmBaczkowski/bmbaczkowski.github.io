@@ -29,11 +29,13 @@
 </noscript><meta property="og:title" content="Managing Research Data with Git Annex: Exporting to Public Repositories" />
 <meta property="og:description" content="How to export data using Git Annex to external data repository (e.g., OSF)" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bmbaczkowski.github.io/blog/blog6/" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://bmbaczkowski.github.io/blog/blog6/" />
+<meta property="og:image" content="https://bmbaczkowski.github.io/blog/blog6/images/logo-with-cli.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2025-06-01T00:00:00+00:00" />
 <meta property="article:modified_time" content="2025-06-01T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://bmbaczkowski.github.io/blog/blog6/images/logo-with-cli.png" />
 <meta name="twitter:title" content="Managing Research Data with Git Annex: Exporting to Public Repositories"/>
 <meta name="twitter:description" content="How to export data using Git Annex to external data repository (e.g., OSF)"/>
 
@@ -71,7 +73,7 @@
   "articleBody": "Managing Large Research Datasets with Git Annex Managing research data is one of the most demanding aspects of scientific work. Datasets and analysis outputs can be massive, frequently updated, and complex—making them difficult to version, share, or archive effectively. That’s where tools like Git Annex come in.\nWhat Is Git Annex? Git Annex extends Git to support large files. Instead of storing these files directly in the Git repository, Git Annex manages their metadata and location, while the actual files are kept elsewhere—on external drives, cloud storage, or remote servers.\nThis decouples version control from data storage, allowing teams to:\nKeep repositories lightweight and fast Share and collaborate without moving large datasets around Maintain reproducibility through precise metadata tracking How Git Annex Works (At a Glance) Git Annex replaces large files in your repository with symlinks. These symlinks point to actual content stored in designated remotes. The tracking information is managed in a special git-annex branch.\nSupported remotes include:\nExternal hard drives SSH-accessible servers S3 buckets And more… This setup lets you:\nKeep your Git repo portable Share metadata separately from data (e.g., for compliance or privacy) Retrieve data on-demand only when necessary Example: Backing Up to an External Drive and Sharing Meta-Data via GitLab Step 1: Initialize a backup remote on an external drive git annex initremote backupdrive type=directory \\ directory=/media/drive/project \\ encryption=none Step 2: Transfer data to the remote git annex copy --to=backupdrive Step 3: Push metadata to GitLab git remote add gitlab https://gitlab.com/your-username/your-repo.git git push gitlab main Don’t forget to push the git-annex branch as well:\ngit push gitlab git-annex 🧠 What You’ll See in GitLab:\nFile symlinks instead of actual content A lightweight repository Reproducible metadata, enabling collaborators to fetch real data from remotes Publishing Your Data: Git Annex + OSF When you’re ready to publish your research, it’s important to archive your data in a public, citable repository. One popular platform is the Open Science Framework (OSF).\nCurrently, OSF cannot serve as a Git Annex remote directly. However, there are workarounds using tools like:\nosfclient DataLad OSF extension 📦 Git Annex Snapshot Export A standout feature of Git Annex is git annex export, which lets you export a snapshot—a clean, static version of your dataset—suitable for archiving and sharing.\nSnapshot Benefits ✅ Clean: no Git metadata or symlinks 🔒 Read-only: ideal for archival 📁 Human-readable: exports as a normal directory tree 🧬 Immutable: tied to a specific Git commit or tag 🛠️ Export Workflow Tag the desired commit Initialize an export-capable remote Export the snapshot Example # Tag the commit you want to export git tag -a osf-v1.0 -m \"Snapshot exported to OSF (v1.0)\" git push gitlab osf-v1.0 # Initialize a remote with export capabilities git annex initremote exportdir type=directory exporttree=yes \\ directory=~/exports/osf # Export snapshot to the remote git annex export osf-v1.0 --to exportdir This command exports a clean, static directory tree—ideal for manual uploads or long-term storage.\nExporting to OSF Manually with osfclient Because Git Annex can’t push directly to OSF, use osfclient to upload exported files.\nStep 1: Install and authenticate pip install osfclient osf init Configure OSF credentials in .osfcli.config:\n[osf] username = yourOSFaccount@example.com project = abcDe (Optional) Save your password as an environment variable:\nexport OSF_PASSWORD= Step 2: Upload Files osfclient does not support full directory uploads, so you’ll need to upload recursively:\nosf upload -r Once complete, deactivate the temporary remote to avoid confusion:\ngit annex dead 📌 Bonus Tip: Automate with DataLad For advanced workflows, consider using DataLad with its OSF extension. This setup integrates OSF as a remote backend, enabling push/pull operations directly—saving you from manual uploads and streamlining reproducibility across teams.\nFinal Thoughts Git Annex offers a powerful way to manage large datasets with reproducibility, collaboration, and efficiency. Paired with archiving platforms like OSF, it provides a robust end-to-end workflow for open, sustainable research. Snapshot exports simplify the transition from development to publication, ensuring clean and trustworthy data sharing. Higher-level tools like DataLad, built on Git Annex, further streamline versioned and reproducible data management at scale.\n",
   "wordCount" : "674",
   "inLanguage": "en",
-  "datePublished": "2025-06-01T00:00:00Z",
+  "image":"https://bmbaczkowski.github.io/blog/blog6/images/logo-with-cli.png","datePublished": "2025-06-01T00:00:00Z",
   "dateModified": "2025-06-01T00:00:00Z",
   "author":[{
     "@type": "Person",
@@ -177,7 +179,7 @@
     <h1 class="post-title entry-hint-parent">
       Managing Research Data with Git Annex: Exporting to Public Repositories
     </h1>
-    <div class="post-meta"><span title='2025-06-01 00:00:00 +0000 UTC'>June 2025</span>&nbsp;&middot;&nbsp;Blazej M. Baczkowski
+    <div class="post-meta"><span title='2025-06-01 00:00:00 +0000 UTC'>June 2025</span>&nbsp;&middot;&nbsp;Blazej M. Baczkowski&nbsp;&middot;&nbsp;<a href="https://git-annex.branchable.com/" rel="noopener noreferrer" target="_blank">Website</a>
 
 </div>
   </header> <div class="toc">
