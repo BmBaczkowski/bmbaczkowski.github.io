@@ -13,7 +13,7 @@ cover:
     alt: "Concept"
     relative: false
 editPost:
-    URL: "https://osf.io/preprints/psyarxiv/c5fsv_v1"
+    URL: "https://osf.io/preprints/psyarxiv/c5fsv_v2"
     Text: "Preprint"
 
 ---
