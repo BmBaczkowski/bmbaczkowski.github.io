@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Emotion Regulation on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/tags/emotion-regulation/</link>
+    <link>http://localhost:1313/tags/emotion-regulation/</link>
     <description>Recent content in Emotion Regulation on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 12 Jul 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/tags/emotion-regulation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/emotion-regulation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deficient amygdala–prefrontal intrinsic connectivity after effortful emotion regulation in borderline personality disorder</title>
-      <link>https://bmbaczkowski.github.io/papers/maastricht/</link>
+      <link>http://localhost:1313/papers/maastricht/</link>
       <pubDate>Fri, 15 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/papers/maastricht/</guid>
+      <guid>http://localhost:1313/papers/maastricht/</guid>
       <description>Studying emotion regulation in Borderline Personality Disorder using fMRI</description>
     </item>
     <item>
       <title>The waxing and waning of threats in an unpredictable immersive virtual environment</title>
-      <link>https://bmbaczkowski.github.io/research/cade/</link>
+      <link>http://localhost:1313/research/cade/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/cade/</guid>
+      <guid>http://localhost:1313/research/cade/</guid>
       <description>Designing immersive virtual reality to study behavioural response to threats in an unpredictable environment.</description>
     </item>
   </channel>

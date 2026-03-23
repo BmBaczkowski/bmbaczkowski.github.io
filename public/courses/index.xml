@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Courses on Blazej M. Baczkowski</title>
-    <link>https://bmbaczkowski.github.io/courses/</link>
+    <link>http://localhost:1313/courses/</link>
     <description>Recent content in Courses on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 15 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://bmbaczkowski.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Principles of memory</title>
-      <link>https://bmbaczkowski.github.io/courses/memory/</link>
+      <link>http://localhost:1313/courses/memory/</link>
       <pubDate>Sat, 15 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/memory/</guid>
+      <guid>http://localhost:1313/courses/memory/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Open Science: from replication crisis to credibility revolution</title>
-      <link>https://bmbaczkowski.github.io/courses/openscience/</link>
+      <link>http://localhost:1313/courses/openscience/</link>
       <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/openscience/</guid>
+      <guid>http://localhost:1313/courses/openscience/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Foundations of Scientific Thinking and Research Methods in Psychology</title>
-      <link>https://bmbaczkowski.github.io/courses/twa/</link>
+      <link>http://localhost:1313/courses/twa/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/twa/</guid>
+      <guid>http://localhost:1313/courses/twa/</guid>
       <description>This is an arXiv repository of materials for a lecture series offered at the University of Hamburg for undergraduate psychology students in 2022 and 2023.</description>
     </item>
     <item>
       <title>Vertiefungsseminar Allgemeine Psychologie II</title>
-      <link>https://bmbaczkowski.github.io/courses/hamburg/</link>
+      <link>http://localhost:1313/courses/hamburg/</link>
       <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/hamburg/</guid>
+      <guid>http://localhost:1313/courses/hamburg/</guid>
       <description>DESC</description>
     </item>
     <item>
       <title>Arxiv</title>
-      <link>https://bmbaczkowski.github.io/courses/arxiv/</link>
+      <link>http://localhost:1313/courses/arxiv/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/courses/arxiv/</guid>
+      <guid>http://localhost:1313/courses/arxiv/</guid>
       <description>I also used to teach at Maastricht University (the Netherlands) and Poznan University (Poland).</description>
     </item>
   </channel>

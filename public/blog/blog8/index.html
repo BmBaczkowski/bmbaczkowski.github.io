@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>Git as research infrastructure | Blazej M. Baczkowski</title>
 <meta name="keywords" content="git, version control, reproducibility">
 <meta name="description" content="If your research uses code, it probably needs Git">
 <meta name="author" content="Blazej M. Baczkowski">
-<link rel="canonical" href="https://bmbaczkowski.github.io/blog/blog8/">
+<link rel="canonical" href="http://localhost:1313/blog/blog8/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.e690afcd5c523330d5c8b4d746eb158361600a015e99518d4d246a6ccab0cc19.css" integrity="sha256-5pCvzVxSMzDVyLTXRusVg2FgCgFemVGNTSRqbMqwzBk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://bmbaczkowski.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://bmbaczkowski.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://bmbaczkowski.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://bmbaczkowski.github.io/apple-touch-icon.png">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://bmbaczkowski.github.io/blog/blog8/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/blog8/">
 <noscript>
     <style>
         #theme-toggle,
@@ -29,13 +29,13 @@
 </noscript><meta property="og:title" content="Git as research infrastructure" />
 <meta property="og:description" content="If your research uses code, it probably needs Git" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bmbaczkowski.github.io/blog/blog8/" />
-<meta property="og:image" content="https://bmbaczkowski.github.io/blog/blog8/images/Git-logo.svg.png" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="http://localhost:1313/blog/blog8/" />
+<meta property="og:image" content="http://localhost:1313/blog/blog8/images/Git-logo.svg.png" /><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2026-01-31T00:00:00+00:00" />
 <meta property="article:modified_time" content="2026-01-31T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://bmbaczkowski.github.io/blog/blog8/images/Git-logo.svg.png" />
+<meta name="twitter:image" content="http://localhost:1313/blog/blog8/images/Git-logo.svg.png" />
 <meta name="twitter:title" content="Git as research infrastructure"/>
 <meta name="twitter:description" content="If your research uses code, it probably needs Git"/>
 
@@ -49,13 +49,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Data Engineering Blog",
-      "item": "https://bmbaczkowski.github.io/blog/"
+      "item": "http://localhost:1313/blog/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Git as research infrastructure",
-      "item": "https://bmbaczkowski.github.io/blog/blog8/"
+      "item": "http://localhost:1313/blog/blog8/"
     }
   ]
 }
@@ -73,7 +73,7 @@
   "articleBody": "Git has a reputation problem in academia.\nIt’s often introduced as a tool for software developers, wrapped in unfamiliar jargon and complex diagrams. Many researchers reasonably conclude: this isn’t for me.\nThat’s a shame – because Git turns out to be remarkably well suited to the realities of modern research.\nResearch Is Already Versioned (Just Not Very Well) If you’ve ever had a folder that looks like this:\nanalysis_final.R analysis_final2.R analysis_final_revised.R analysis_FINAL_real.R you already know the problem.\nInstead of copying files, Git records changes. Instead of guessing, it keeps a history. Instead of hoping we remember why something was done, it lets us write it down. Git doesn’t introduce a new habit – it improves an existing one.\nA Time Machine for Your Project At its core, Git does something simple: it remembers the state of your project over time.\nThis means you can:\nReturn to an earlier version of an analysis See exactly what changed between two revisions Reproduce results from a known point in the project’s history For research, this is incredibly practical. It turns “I think this is how we did it” into “here is exactly how we did it.”\nReproducibility Becomes Easier, Not Harder Reproducibility is often framed as extra work. Git flips that around. By keeping a clear record of how your analysis evolved, Git makes it easier to:\nRespond to reviewer questions Recreate figures and tables Share work transparently with collaborators Return to old projects without confusion It doesn’t enforce reproducibility – it supports it.\nYou Don’t Need to Learn “All of Git” This is important.\nMost researchers only need a small part of Git to get substantial benefits. You don’t need advanced workflows or deep technical knowledge. A basic routine — record changes, add a short message, move on – already solves many common problems.\nIn practice, that routine can be as simple as this:\n$ git init Run once at the start of a project. It tells Git: this folder is now versioned.\nAfter you’ve made meaningful progress – cleaned data, updated a model, revised a figure – record it:\n$ git add . $ git commit -m \"Cleaned dataset and updated regression model\" That’s it. You’ve saved a precise snapshot of your project, along with a short explanation of what changed.\nLater, if you’re unsure what happened:\n$ git log shows the project history.\nYou don’t need branching strategies. You don’t need advanced configuration. For many research projects, these few commands already replace duplicated files, lost context, and version confusion.\nA Small Tool With Long-Term Payoff Research projects tend to last years. People come and go. Files accumulate. Context fades. Git quietly preserves that context. It won’t change how you think about your research — but it can change how confidently you manage it. And once it’s part of your workflow, it tends to stay there.\n",
   "wordCount" : "475",
   "inLanguage": "en",
-  "image":"https://bmbaczkowski.github.io/blog/blog8/images/Git-logo.svg.png","datePublished": "2026-01-31T00:00:00Z",
+  "image":"http://localhost:1313/blog/blog8/images/Git-logo.svg.png","datePublished": "2026-01-31T00:00:00Z",
   "dateModified": "2026-01-31T00:00:00Z",
   "author":[{
     "@type": "Person",
@@ -81,14 +81,14 @@
   }],
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://bmbaczkowski.github.io/blog/blog8/"
+    "@id": "http://localhost:1313/blog/blog8/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Blazej M. Baczkowski",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://bmbaczkowski.github.io/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -129,8 +129,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://bmbaczkowski.github.io/" accesskey="h" title="Blazej M. Baczkowski">
-                <img src="https://bmbaczkowski.github.io/favicon.ico" alt="" aria-label="logo"
+            <a href="http://localhost:1313/" accesskey="h" title="Blazej M. Baczkowski">
+                <img src="http://localhost:1313/favicon.ico" alt="" aria-label="logo"
                     height="18"
                     width="18">Blazej M. Baczkowski</a>
             <div class="logo-switches">
@@ -138,32 +138,32 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="https://bmbaczkowski.github.io/research/" title="Research">
+                <a href="http://localhost:1313/research/" title="Research">
                     <span>Research</span>
                 </a>
             </li>
             <li>
-                <a href="https://bmbaczkowski.github.io/papers/" title="Papers">
+                <a href="http://localhost:1313/papers/" title="Papers">
                     <span>Papers</span>
                 </a>
             </li>
             <li>
-                <a href="https://bmbaczkowski.github.io/courses/" title="Teaching">
+                <a href="http://localhost:1313/courses/" title="Teaching">
                     <span>Teaching</span>
                 </a>
             </li>
             <li>
-                <a href="https://bmbaczkowski.github.io/books/" title="Books">
+                <a href="http://localhost:1313/books/" title="Books">
                     <span>Books</span>
                 </a>
             </li>
             <li>
-                <a href="https://bmbaczkowski.github.io/blog/" title="Blog">
+                <a href="http://localhost:1313/blog/" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://bmbaczkowski.github.io/consulting/" title="Consulting">
+                <a href="http://localhost:1313/consulting/" title="Consulting">
                     <span>Consulting</span>
                 </a>
             </li>
@@ -258,16 +258,16 @@ By keeping a clear record of how your analysis evolved, Git makes it easier to:<
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://bmbaczkowski.github.io/tags/git/">Git</a></li>
-      <li><a href="https://bmbaczkowski.github.io/tags/version-control/">Version Control</a></li>
-      <li><a href="https://bmbaczkowski.github.io/tags/reproducibility/">Reproducibility</a></li>
+      <li><a href="http://localhost:1313/tags/git/">Git</a></li>
+      <li><a href="http://localhost:1313/tags/version-control/">Version Control</a></li>
+      <li><a href="http://localhost:1313/tags/reproducibility/">Reproducibility</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2026 <a href="https://bmbaczkowski.github.io/">Blazej M. Baczkowski</a></span> · 
+    <span>&copy; 2026 <a href="http://localhost:1313/">Blazej M. Baczkowski</a></span> · 
     <span class="footer-links"><a href="/impressum/">Impressum</a> · <a href="/datenschutz/">Dtenschutz</a>
     </span> · 
     <span>
