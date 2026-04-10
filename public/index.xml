@@ -23,6 +23,13 @@
       <description>Reflections from deRSE25 @Uni Stuttgart</description>
     </item>
     <item>
+      <title>Emotional learning and episodic memory organisation</title>
+      <link>https://bmbaczkowski.github.io/research/unravel/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://bmbaczkowski.github.io/research/unravel/</guid>
+      <description>Description</description>
+    </item>
+    <item>
       <title>Git as research infrastructure</title>
       <link>https://bmbaczkowski.github.io/blog/blog8/</link>
       <pubDate>Sat, 31 Jan 2026 00:00:00 +0000</pubDate>
@@ -105,13 +112,6 @@
       <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://bmbaczkowski.github.io/woodwork/</guid>
       <description>Hobby</description>
-    </item>
-    <item>
-      <title>Emotional learning and episodic memory organisation</title>
-      <link>https://bmbaczkowski.github.io/research/unravel/</link>
-      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://bmbaczkowski.github.io/research/unravel/</guid>
-      <description>Description</description>
     </item>
     <item>
       <title>Streamlining Docker Workflows with GNU Make</title>
