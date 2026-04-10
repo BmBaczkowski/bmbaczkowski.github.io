@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Arousal on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/arousal/</link>
+    <link>https://bmbaczkowski.github.io/tags/arousal/</link>
     <description>Recent content in Arousal on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 15 Jun 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/arousal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/arousal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shifts of the amygdala coupling with dorsal and ventral medial PFC are associated with fluctuations in arousal</title>
-      <link>http://localhost:1313/papers/berlin/</link>
+      <link>https://bmbaczkowski.github.io/papers/berlin/</link>
       <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/berlin/</guid>
+      <guid>https://bmbaczkowski.github.io/papers/berlin/</guid>
       <description>Description</description>
     </item>
   </channel>

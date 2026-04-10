@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Threat on Blazej M. Baczkowski</title>
-    <link>http://localhost:1313/tags/threat/</link>
+    <link>https://bmbaczkowski.github.io/tags/threat/</link>
     <description>Recent content in Threat on Blazej M. Baczkowski</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 12 Jul 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/threat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://bmbaczkowski.github.io/tags/threat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The waxing and waning of threats in an unpredictable immersive virtual environment</title>
-      <link>http://localhost:1313/research/cade/</link>
+      <link>https://bmbaczkowski.github.io/research/cade/</link>
       <pubDate>Thu, 15 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/research/cade/</guid>
+      <guid>https://bmbaczkowski.github.io/research/cade/</guid>
       <description>Designing immersive virtual reality to study behavioural response to threats in an unpredictable environment.</description>
     </item>
   </channel>
